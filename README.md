@@ -46,7 +46,7 @@ index.html (Beranda / P1)
 ---
 
 ## 5. Framework CSS vs CSS Murni *(Akan dilengkapi pada tahap CSS)*
-- **Framework yang Dipilih:** `[Bootstrap 5.3 / Tailwind CSS v4]`
+- **Framework yang Dipilih:** `[Bootstrap 5.3]`
 - **Pembagian Penggunaan & Perbandingan Komponen:** *(akan dijelaskan setelah implementasi framework dan `css/style.css` selesai)*
 
 ---
