@@ -2,24 +2,31 @@
 <html lang="id">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tentang Kami — Cemal-Cemil-Chika</title>
   <meta name="description"
-    content="Kenali cerita dapur, perjalanan usaha sejak 2018, tim, dan tanya jawab seputar layanan kuliner rumahan Cemal-Cemil-Chika.">
-  <!-- Link CDN Bootstrap 5.3 akan diletakkan di sini pada tahap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+    content="Kenali cerita dapur, perjalanan usaha sejak 2018, tim, dan tanya jawab seputar layanan kuliner rumahan Cemal-Cemil-Chika." />
+
+  <!-- Bootstrap 5.3 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+  <!-- Aksesibilitas: Tautan Lewati ke Konten Utama (B5) -->
   <a href="#konten-utama">Lewati ke konten utama</a>
 
+  <!-- Header & Navigasi Bersama (A2, A4) -->
   <header>
     <nav class="navbar navbar-expand-lg chika-navbar" aria-label="Navigasi utama">
       <div class="container">
-        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
-          Cemal-Cemil-Chika
+        <a class="navbar-brand fw-bold" href="index.html">
+          <span class="brand-icon"><i class="bi bi-egg-fried"></i></span>
+          <span>Cemal-Cemil-Chika</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuUtama"
           aria-controls="menuUtama" aria-expanded="false" aria-label="Buka menu navigasi">
@@ -39,153 +46,330 @@
     </nav>
   </header>
 
+  <!-- Konten Utama (A2) -->
   <main id="konten-utama">
-    <section aria-labelledby="judul-tentang">
-      <h1 id="judul-tentang">Tentang Cemal-Cemil-Chika</h1>
-      <p>
-        Berawal dari hal kecil menjadi sebuah dapur makanan siap saji, Cemal-Cemil-Chika hadir
-        menyajikan aneka camilan dan hidangan rumahan yang hangat, higienis, dan sehat.
-      </p>
-    </section>
-
-    <section aria-labelledby="judul-profil">
-      <h2 id="judul-profil">Cerita Dapur Kami</h2>
-      <p>
-        Setiap menu diracik langsung oleh Ibu menggunakan bahan segar pilihan dan dibuat secara
-        manual. Dari pesanan harian hingga orderan katering acara, kami menjaga rasa konsisten
-        layaknya masakan rumah sendiri.
-      </p>
-
-      <figure>
-        <img src="img/dapur-cemal-cemil.jpg" alt="Proses penyiapan pesanan makanan rumahan di dapur Cemal-Cemil-Chika"
-          width="800" height="533" loading="lazy">
-        <figcaption>Suasana dapur Cemal-Cemil-Chika saat menyiapkan pesanan pelanggan.</figcaption>
-      </figure>
-    </section>
-
-    <section aria-labelledby="judul-tim">
-      <h2 id="judul-tim">Tim Di Balik Layar</h2>
-
-      <article>
-        <h3>Ibu (Pemilik &amp; Koki Utama)</h3>
-        <p>Mengelola resep andalan, kualitas bahan baku, serta pengawasan rasa setiap hidangan.</p>
-      </article>
-
-      <article>
-        <h3>Admin Pemesanan</h3>
-        <p>Membantu pencatatan pre-order, reservasi paket acara, dan koordinasi pengiriman.</p>
-      </article>
-    </section>
-
-    <section aria-labelledby="judul-perjalanan">
-      <h2 id="judul-perjalanan">Perjalanan Usaha Cemal-Cemil-Chika</h2>
-      <p>Kisah perjuangan dapur kami beradaptasi dari masa ke masa hingga dipercaya pelanggan.</p>
-
-      <ol>
-        <li>
-          <article>
-            <p><time datetime="2018">2018</time> – <time datetime="2019">2019</time></p>
-            <h3>Di Awal Mulai</h3>
-            <p>
-              Berawal dari jualan makanan kecil-kecilan seperti kerupuk dan kacang. Pada masa ini,
-              makanan masih dititipkan di warung sekitar dan kantin sekolah.
-            </p>
-          </article>
-        </li>
-
-        <li>
-          <article>
-            <p><time datetime="2019">2019</time> – <time datetime="2020">2020</time></p>
-            <h3>Masa Pre-COVID-19 dan Era Pandemi</h3>
-            <p>
-              Pada masa ini, jualan kacang dan kerupuk tidak berjalan baik karena hampir semua
-              warung tutup, kondisi sekolah juga kosong, dan kantin diliburkan sehingga dagangan
-              sempat berhenti total.
-            </p>
-          </article>
-        </li>
-
-        <li>
-          <article>
-            <p><time datetime="2022">2022</time> – <time datetime="2023">2023</time></p>
-            <h3>Bangkit Saat Pandemi dengan Menu Baru</h3>
-            <p>
-              Di era maraknya PHK massal, Cemal-Cemil-Chika membuat perubahan dari jualan kerupuk
-              dan kacang beralih ke makanan ringan serta makanan berat. Menu pertama saat itu adalah
-              martabak mie dan siomay ayam.
-            </p>
-          </article>
-        </li>
-
-        <li>
-          <article>
-            <p><time datetime="2023">2023</time> – <time datetime="2024">2024</time></p>
-            <h3>Transisi Pasca Pandemi ke Gerai Online</h3>
-            <p>
-              Penjualan mulai dialihkan ke gerai online seperti Grab dan Gojek, namun sejak 2025
-              penjualan difokuskan di gerai ShopeeFood.
-            </p>
-          </article>
-        </li>
-
-        <li>
-          <article>
-            <p><time datetime="2024">2024</time> – Sekarang</p>
-            <h3>Dipercaya Pelanggan &amp; Pesanan Acara</h3>
-            <p>
-              Cemal-Cemil-Chika sudah memiliki pelanggan tetap dan menerima orderan dalam jumlah
-              banyak, baik untuk acara keluarga, acara formal, maupun jajanan harian. Gerai kami
-              juga tersedia di ShopeeFood atau Anda bisa memesan langsung lewat halaman
-              <a href="pesan.html">Pesan</a>.
-            </p>
-          </article>
-        </li>
-      </ol>
-    </section>
-
-    <aside aria-labelledby="judul-ringkasan">
-      <h2 id="judul-ringkasan">Sekilas Layanan Kami</h2>
-      <ul>
-        <li>Melayani pesanan satuan maupun paket besar (arisan, rapat, acara kampus).</li>
-        <li>Tersedia dalam kondisi siap matang maupun frozen food.</li>
-      </ul>
-      <p>
-        Ingin tahu alamat lengkap atau langsung pesan? Cek halaman
-        <a href="contact.html">Kontak</a> atau <a href="pesan.html">Pesan Sekarang</a>.
-      </p>
-    </aside>
-
-    <section aria-labelledby="judul-faq">
-      <h2 id="judul-faq">Pertanyaan yang Sering Diajukan (FAQ)</h2>
-
-      <details>
-        <summary>Apakah Cemal-Cemil-Chika menerima pesanan dalam jumlah banyak?</summary>
-        <p>
-          Ya, kami melayani pesanan dalam jumlah besar untuk acara kampus, arisan, maupun
-          rapat keluarga. Sebaiknya pesan minimal 1 minggu sebelumnya agar persiapan maksimal.
+    <!-- 1. Page Hero Banner (A3) -->
+    <section class="page-hero text-center" aria-labelledby="judul-tentang">
+      <div class="container">
+        <span class="badge-accent mb-3 d-inline-block">
+          <i class="bi bi-heart-fill"></i> Cerita &amp; Dedikasi Dapur
+        </span>
+        <h1 id="judul-tentang" class="hero-title mb-3">
+          Tentang <span class="text-highlight">Cemal-Cemil-Chika</span>
+        </h1>
+        <p class="section-desc mb-0 mx-auto">
+          Berawal dari dapur rumahan sederhana hingga berkembang menjadi penyedia hidangan siap saji dan camilan hangat yang higienis, lezat, dan ramah di kantong.
         </p>
-      </details>
+      </div>
+    </section>
 
-      <details>
-        <summary>Bagaimana cara memesan menu di Cemal-Cemil-Chika?</summary>
-        <p>
-          Kamu bisa langsung mengisi formulir di halaman <a href="pesan.html">Pesan</a>
-          atau menghubungi kontak yang tertera di halaman <a href="contact.html">Kontak</a>.
-        </p>
-      </details>
+    <!-- 2. Cerita Dapur Kami (A5, D4) -->
+    <section class="section-padding bg-white" aria-labelledby="judul-profil">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="section-tag">Dapur Otentik</span>
+            <h2 id="judul-profil" class="section-title">Cerita Dapur Kami</h2>
+            <p class="mb-3">
+              Setiap menu diracik langsung oleh Ibu menggunakan bahan segar pilihan dan dibuat secara manual dengan penuh ketelitian.
+            </p>
+            <p class="mb-4 text-muted">
+              Dari pesanan harian untuk jajan santai hingga orderan katering acara besar, kami selalu menjaga rasa tetap konsisten layaknya masakan hangat di rumah sendiri.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="menu.html" class="btn-chika-primary">
+                <i class="bi bi-card-list"></i> Lihat Menu Kami
+              </a>
+              <a href="pesan.html" class="btn-chika-outline">
+                <i class="bi bi-bag-check"></i> Pesan Sekarang
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <figure class="hero-image-card mb-0 shadow-sm border rounded-4 overflow-hidden">
+              <img src="img/dapur-cemal-cemil.jpg" alt="Proses penyiapan pesanan makanan rumahan di dapur Cemal-Cemil-Chika"
+                width="800" height="533" loading="lazy" class="img-fluid" />
+              <figcaption class="p-3 text-center small text-muted bg-white">
+                <i class="bi bi-camera me-1"></i> Suasana dapur Cemal-Cemil-Chika saat menyiapkan pesanan pelanggan.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <details>
-        <summary>Apakah semua bahan yang digunakan halal dan dibuat segar?</summary>
-        <p>
-          InsyaAllah seluruh bahan terjamin halal dan dimasak segar sesuai pesanan setiap hari.
-        </p>
-      </details>
+    <!-- 3. Tim Di Balik Layar (A2, P4) -->
+    <section class="section-padding" aria-labelledby="judul-tim">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-tag">Keluarga Kami</span>
+          <h2 id="judul-tim" class="section-title">Tim Di Balik Layar</h2>
+          <p class="section-desc">Sosok-sosok berdedikasi yang menjaga mutu rasa dan kelancaran setiap pesanan Anda.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-5">
+            <article class="card h-100 border-0 shadow-sm rounded-4 p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="brand-icon">
+                  <i class="bi bi-person-heart"></i>
+                </div>
+                <div>
+                  <h3 class="h5 mb-0">Ibu Chika</h3>
+                  <span class="small text-muted">Pemilik &amp; Koki Utama</span>
+                </div>
+              </div>
+              <p class="mb-0 text-muted">
+                Mengelola resep andalan keluarga, memilih bahan baku segar berkualitas, serta mengawasi cita rasa setiap hidangan agar selalu lezat.
+              </p>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-5">
+            <article class="card h-100 border-0 shadow-sm rounded-4 p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="brand-icon">
+                  <i class="bi bi-headset"></i>
+                </div>
+                <div>
+                  <h3 class="h5 mb-0">Admin Pemesanan</h3>
+                  <span class="small text-muted">Layanan &amp; Logistik</span>
+                </div>
+              </div>
+              <p class="mb-0 text-muted">
+                Membantu pencatatan pre-order, mengelola reservasi paket katering acara, dan memastikan koordinasi pengiriman pesanan tepat waktu.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Perjalanan Usaha (A2 Timeline) -->
+    <section class="section-padding bg-white" aria-labelledby="judul-perjalanan">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-tag">Perjalanan</span>
+          <h2 id="judul-perjalanan" class="section-title">Perjalanan Usaha Kami</h2>
+          <p class="section-desc">Kisah perjuangan dapur Cemal-Cemil-Chika beradaptasi dari masa ke masa hingga dipercaya pelanggan.</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <ol class="list-unstyled d-flex flex-column gap-3 mb-0">
+              <!-- Era 1 -->
+              <li>
+                <article class="card border-0 shadow-sm rounded-4 p-4 border-start border-warning border-4">
+                  <div class="mb-2">
+                    <span class="badge-chika"><i class="bi bi-calendar3"></i> <time datetime="2018">2018</time> – <time datetime="2019">2019</time></span>
+                  </div>
+                  <h3 class="h5 mt-2 mb-2">Di Awal Mulai</h3>
+                  <p class="mb-0 text-muted">
+                    Berawal dari jualan makanan kecil-kecilan seperti kerupuk dan kacang. Pada masa ini, makanan masih dititipkan di warung sekitar dan kantin sekolah.
+                  </p>
+                </article>
+              </li>
+
+              <!-- Era 2 -->
+              <li>
+                <article class="card border-0 shadow-sm rounded-4 p-4 border-start border-primary border-4">
+                  <div class="mb-2">
+                    <span class="badge-chika"><i class="bi bi-calendar3"></i> <time datetime="2019">2019</time> – <time datetime="2020">2020</time></span>
+                  </div>
+                  <h3 class="h5 mt-2 mb-2">Masa Pre-COVID-19 dan Era Pandemi</h3>
+                  <p class="mb-0 text-muted">
+                    Pada masa ini, jualan kacang dan kerupuk tidak berjalan baik karena hampir semua warung tutup, kondisi sekolah kosong, dan kantin diliburkan sehingga dagangan sempat berhenti total.
+                  </p>
+                </article>
+              </li>
+
+              <!-- Era 3 -->
+              <li>
+                <article class="card border-0 shadow-sm rounded-4 p-4 border-start border-warning border-4">
+                  <div class="mb-2">
+                    <span class="badge-chika"><i class="bi bi-calendar3"></i> <time datetime="2022">2022</time> – <time datetime="2023">2023</time></span>
+                  </div>
+                  <h3 class="h5 mt-2 mb-2">Bangkit Saat Pandemi dengan Menu Baru</h3>
+                  <p class="mb-0 text-muted">
+                    Di era maraknya PHK massal, Cemal-Cemil-Chika membuat perubahan dari jualan kerupuk dan kacang beralih ke makanan ringan serta makanan berat. Menu pertama saat itu adalah martabak mie dan siomay ayam.
+                  </p>
+                </article>
+              </li>
+
+              <!-- Era 4 -->
+              <li>
+                <article class="card border-0 shadow-sm rounded-4 p-4 border-start border-primary border-4">
+                  <div class="mb-2">
+                    <span class="badge-chika"><i class="bi bi-calendar3"></i> <time datetime="2023">2023</time> – <time datetime="2024">2024</time></span>
+                  </div>
+                  <h3 class="h5 mt-2 mb-2">Transisi Pasca Pandemi ke Gerai Online</h3>
+                  <p class="mb-0 text-muted">
+                    Penjualan mulai dialihkan ke gerai online seperti Grab dan Gojek, lalu sejak 2025 penjualan difokuskan di gerai ShopeeFood.
+                  </p>
+                </article>
+              </li>
+
+              <!-- Era 5 -->
+              <li>
+                <article class="card border-0 shadow-sm rounded-4 p-4 border-start border-warning border-4">
+                  <div class="mb-2">
+                    <span class="badge-accent"><i class="bi bi-stars"></i> <time datetime="2024">2024</time> – Sekarang</span>
+                  </div>
+                  <h3 class="h5 mt-2 mb-2">Dipercaya Pelanggan &amp; Pesanan Acara</h3>
+                  <p class="mb-0 text-muted">
+                    Cemal-Cemil-Chika sudah memiliki pelanggan tetap dan menerima orderan dalam jumlah banyak, baik untuk acara keluarga, formal, maupun jajanan harian. Gerai kami juga tersedia di ShopeeFood atau Anda bisa memesan langsung lewat halaman <a href="pesan.html" class="fw-bold">Pesan</a>.
+                  </p>
+                </article>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Sekilas Layanan (Aside Box A2) -->
+    <section class="section-padding">
+      <div class="container">
+        <aside class="cta-box text-start p-4 p-md-5" aria-labelledby="judul-ringkasan">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <span class="badge-chika mb-2 d-inline-block"><i class="bi bi-info-circle"></i> Info Layanan</span>
+              <h2 id="judul-ringkasan" class="h3 text-white mb-3">Sekilas Layanan Cemal-Cemil-Chika</h2>
+              <ul class="text-white-50 mb-3 ps-3">
+                <li class="mb-1 text-white">Melayani pesanan satuan maupun paket besar (arisan, rapat, acara kampus).</li>
+                <li class="text-white">Tersedia dalam kondisi siap matang hangat maupun kemasan <em>frozen food</em>.</li>
+              </ul>
+              <p class="text-white-50 mb-0 small">
+                Ingin tahu alamat lengkap atau langsung pesan? Cek halaman <a href="contact.html" class="text-white text-decoration-underline">Kontak</a> atau <a href="pesan.html" class="text-white text-decoration-underline">Pesan Sekarang</a>.
+              </p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a href="contact.html" class="btn-chika-light">
+                <i class="bi bi-geo-alt-fill"></i> Hubungi Dapur Kami
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 6. FAQ Interaktif (P4, Aksesibilitas Native) -->
+    <section class="section-padding bg-white" aria-labelledby="judul-faq">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-center mb-5">
+              <span class="section-tag">Bantuan</span>
+              <h2 id="judul-faq" class="section-title">Pertanyaan yang Sering Diajukan (FAQ)</h2>
+              <p class="section-desc">Jawaban cepat untuk pertanyaan yang sering ditanyakan pelanggan kami.</p>
+            </div>
+
+            <div class="d-flex flex-column gap-3">
+              <details class="card border p-3 rounded-3 shadow-sm">
+                <summary class="fw-bold user-select-none">
+                  <i class="bi bi-question-circle me-2 text-warning"></i> Apakah Cemal-Cemil-Chika menerima pesanan dalam jumlah banyak?
+                </summary>
+                <p class="mt-3 mb-0 text-muted ps-4">
+                  Ya, kami melayani pesanan dalam jumlah besar untuk acara kampus, arisan, maupun rapat keluarga. Sebaiknya pesan minimal 1 minggu sebelumnya agar persiapan maksimal.
+                </p>
+              </details>
+
+              <details class="card border p-3 rounded-3 shadow-sm">
+                <summary class="fw-bold user-select-none">
+                  <i class="bi bi-question-circle me-2 text-warning"></i> Bagaimana cara memesan menu di Cemal-Cemil-Chika?
+                </summary>
+                <p class="mt-3 mb-0 text-muted ps-4">
+                  Kamu bisa langsung mengisi formulir di halaman <a href="pesan.html" class="fw-bold text-decoration-none">Pesan</a> atau menghubungi kontak yang tertera di halaman <a href="contact.html" class="fw-bold text-decoration-none">Kontak</a>.
+                </p>
+              </details>
+
+              <details class="card border p-3 rounded-3 shadow-sm">
+                <summary class="fw-bold user-select-none">
+                  <i class="bi bi-question-circle me-2 text-warning"></i> Apakah semua bahan yang digunakan halal dan dibuat segar?
+                </summary>
+                <p class="mt-3 mb-0 text-muted ps-4">
+                  InsyaAllah seluruh bahan terjamin 100% halal dan dimasak segar sesuai pesanan setiap hari.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Cemal-Cemil-Chika. Dibuat oleh Kelompok Kelas V TI ITATS.</p>
+  <!-- Footer Seragam (A2) -->
+  <footer class="chika-footer">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        <!-- Kolom 1: Profil Usaha -->
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <span class="brand-icon"><i class="bi bi-egg-fried"></i></span>
+            <span class="h4 mb-0 text-white font-fredoka">Cemal-Cemil-Chika</span>
+          </div>
+          <p>
+            Usaha kuliner rumahan lokal UMKM di Surabaya yang menghadirkan aneka camilan gurih, kue basah lezat, dan layanan katering snack box berkualitas sejak 2018.
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <span class="badge-accent"><i class="bi bi-geo-alt-fill"></i> Surabaya, Jawa Timur</span>
+          </div>
+        </div>
+
+        <!-- Kolom 2: Navigasi Cepat -->
+        <div class="col-lg-2 col-md-6">
+          <h3>Navigasi</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right"></i> Beranda</a></li>
+            <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Daftar Menu</a></li>
+            <li><a href="pesan.html"><i class="bi bi-chevron-right"></i> Formulir Pesan</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right"></i> Tentang Kami</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Kontak &amp; Lokasi</a></li>
+            <li><a href="image.html"><i class="bi bi-chevron-right"></i> Galeri Foto</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom 3: Jam Layanan -->
+        <div class="col-lg-3 col-md-6">
+          <h3>Jam Layanan</h3>
+          <p class="mb-2">
+            <i class="bi bi-clock me-2 text-warning"></i>
+            <strong>Senin – Sabtu:</strong><br />07.30 – 18.00 WIB
+          </p>
+          <p class="mb-2">
+            <i class="bi bi-clock-history me-2 text-warning"></i>
+            <strong>Minggu / Hari Libur:</strong><br />Khusus pesanan pre-order acara
+          </p>
+          <p class="small text-muted mt-2">
+            Tersedia juga pemesanan online melalui ShopeeFood &amp; WhatsApp.
+          </p>
+        </div>
+
+        <!-- Kolom 4: Info Kampus & Kontak -->
+        <div class="col-lg-3 col-md-6">
+          <h3>Dapur Kami</h3>
+          <p class="mb-2">
+            <i class="bi bi-geo-alt me-2 text-warning"></i> Sekitar Area Surabaya timur, Gunung Anyar
+          </p>
+          <p class="mb-2">
+            <i class="bi bi-whatsapp me-2 text-success"></i> Hubungi via Halaman Kontak
+          </p>
+          <p class="small text-muted">
+            Melayani pesan antar (delivery) dan ambil di tempat (takeaway).
+          </p>
+        </div>
+      </div>
+
+      <!-- Copyright Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="mb-0">
+          &copy; 2026 Cemal-Cemil-Chika. Dibuat oleh Kelompok Kelas V TI ITATS.
+        </p>
+      </div>
+    </div>
   </footer>
+
+  <!-- Bootstrap 5.3 Bundle JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

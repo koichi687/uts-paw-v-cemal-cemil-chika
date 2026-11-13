@@ -1,712 +1,609 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Beranda — Cemal-Cemil-Chika | Aneka Camilan & Makanan Rumahan Lezat
-    </title>
-    <meta
-      name="description"
-      content="Selamat datang di Cemal-Cemil-Chika. Nikmati aneka camilan gurih, kue basah manis, dan hidangan katering rumahan lezat, higienis, dan ramah di kantong mahasiswa maupun keluarga di Surabaya."
-    />
 
-    <!-- Bootstrap 5.3 CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap Icons CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Beranda — Cemal-Cemil-Chika | Aneka Camilan & Makanan Rumahan Lezat
+  </title>
+  <meta name="description"
+    content="Selamat datang di Cemal-Cemil-Chika. Nikmati aneka camilan gurih, kue basah manis, dan hidangan katering rumahan lezat, higienis, dan ramah di kantong mahasiswa maupun keluarga di Surabaya." />
 
-  <body>
-    <!-- Aksesibilitas: Tautan Lewati ke Konten Utama -->
-    <a href="#konten-utama">Lewati ke konten utama</a>
+  <!-- Bootstrap 5.3 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-    <!-- Header & Navigasi -->
-    <header>
-      <nav
-        class="navbar navbar-expand-lg chika-navbar"
-        aria-label="Navigasi utama"
-      >
-        <div class="container">
-          <a class="navbar-brand fw-bold" href="index.html">
-            <span class="brand-icon"><i class="bi bi-egg-fried"></i></span>
-            <span>Cemal-Cemil-Chika</span>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menuUtama"
-            aria-controls="menuUtama"
-            aria-expanded="false"
-            aria-label="Buka menu navigasi"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="menuUtama">
-            <ul class="navbar-nav ms-auto gap-lg-2">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html" aria-current="page"
-                  >Beranda</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="menu.html">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pesan.html">Pesan</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">Tentang</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Kontak</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="image.html">Galeri</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+<body>
+  <!-- Aksesibilitas: Tautan Lewati ke Konten Utama -->
+  <a href="#konten-utama">Lewati ke konten utama</a>
 
-    <!-- Konten Utama -->
-    <main id="konten-utama">
-      <!-- 1. Hero Section -->
-      <section class="hero-section" aria-labelledby="judul-hero">
-        <div class="container">
-          <div class="row align-items-center g-5">
-            <div class="col-lg-7">
-              <span class="badge-accent mb-3">
-                <i class="bi bi-stars"></i> Resep Autentik Rumahan Sejak 2018
-              </span>
-              <h1 id="judul-hero" class="hero-title">
-                Hangatnya Camilan Rumahan,
-                <span class="text-highlight">Dibuat Sepenuh Hati</span>
-              </h1>
-              <p class="hero-lead">
-                Dari pastel renyah isi sayur ayam, risoles lembut lumer, hingga
-                aneka kue basah dan paket snack box katering. Kami sajikan
-                hidangan segar, higienis, dan pas di lidah untuk menemani setiap
-                waktu santai Anda.
-              </p>
-              <div class="d-flex flex-wrap gap-3 hero-cta-group">
-                <a href="menu.html" class="btn-chika-accent">
-                  <i class="bi bi-card-list"></i> Lihat Katalog Menu
-                </a>
-                <a href="pesan.html" class="btn-chika-outline">
-                  <i class="bi bi-cart-check"></i> Pesan Sekarang
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-5">
-              <figure class="hero-image-card mb-0">
-                <img
-                  src="img/dapur-cemal-cemil.jpg"
-                  alt="Dokumentasi aneka ragam kue basah dan camilan hangat buatan Cemal-Cemil-Chika siap kirim"
-                  width="800"
-                  height="533"
-                  loading="eager"
-                />
-                <figcaption class="visually-hidden">
-                  Koleksi kue pastel, donat cokelat meses, dan jajanan pasar
-                  siap antar Cemal-Cemil-Chika
-                </figcaption>
-                <div class="hero-floating-badge">
-                  <div class="badge-icon">
-                    <i class="bi bi-patch-check-fill"></i>
-                  </div>
-                  <div>
-                    <strong>100% Halal &amp; Higienis</strong>
-                    <small>Selalu dimasak segar tiap pagi</small>
-                  </div>
-                </div>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 2. Keunggulan / Value Proposition -->
-      <section class="section-padding" aria-labelledby="judul-keunggulan">
-        <div class="container">
-          <div class="text-center">
-            <span class="section-tag">Keunggulan Dapur Kami</span>
-            <h2 id="judul-keunggulan" class="section-title">
-              Mengapa Memilih Cemal-Cemil-Chika?
-            </h2>
-            <p class="section-desc">
-              Komitmen kami adalah menghadirkan rasa masakan rumah yang otentik,
-              menggunakan bahan segar pilihan dengan pelayanan ramah dan
-              terpercaya.
-            </p>
-          </div>
-
-          <div class="row g-4">
-            <div class="col-md-6 col-lg-3">
-              <article class="feature-card">
-                <div class="feature-icon-bubble">
-                  <i class="bi bi-basket3"></i>
-                </div>
-                <h3>Bahan Alami &amp; Segar</h3>
-                <p>
-                  Dipilih setiap subuh dari pasar lokal, diolah bersih tanpa
-                  bahan pengawet atau pemanis buatan.
-                </p>
-              </article>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-              <article class="feature-card">
-                <div class="feature-icon-bubble">
-                  <i class="bi bi-heart-pulse"></i>
-                </div>
-                <h3>Resep Autentik Ibu</h3>
-                <p>
-                  Resep turun-temurun dengan racikan bumbu pas, menghadirkan
-                  aroma dan rasa nostalgia masakan rumah.
-                </p>
-              </article>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-              <article class="feature-card">
-                <div class="feature-icon-bubble">
-                  <i class="bi bi-box2-heart"></i>
-                </div>
-                <h3>Siap Pesanan Acara</h3>
-                <p>
-                  Spesialis snack box untuk rapat, seminar kampus, arisan
-                  keluarga, syukuran, dan acara instansi.
-                </p>
-              </article>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-              <article class="feature-card">
-                <div class="feature-icon-bubble">
-                  <i class="bi bi-wallet2"></i>
-                </div>
-                <h3>Harga Bersahabat</h3>
-                <p>
-                  Kualitas rasa terjamin istimewa dengan harga terjangkau yang
-                  ramah di kantong mahasiswa.
-                </p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 3. Menu Favorit Pilihan Pelanggan -->
-      <section
-        class="section-padding bg-white"
-        aria-labelledby="judul-menu-favorit"
-      >
-        <div class="container">
-          <div class="text-center">
-            <span class="section-tag">Paling Banyak Dicari</span>
-            <h2 id="judul-menu-favorit" class="section-title">
-              Menu Favorit Andalan
-            </h2>
-            <p class="section-desc">
-              Pilihan hidangan yang paling sering dipesan oleh pelanggan setia
-              kami untuk cemilan harian maupun suguhan tamu.
-            </p>
-          </div>
-
-          <div class="row g-4">
-            <!-- Item 1: Pastel Goreng Renyah -->
-            <div class="col-md-6 col-lg-4">
-              <article class="menu-card">
-                <div class="menu-card-visual">
-                  <span
-                    class="food-avatar"
-                    role="img"
-                    aria-label="Pastel Goreng"
-                    >🥟</span
-                  >
-                  <span class="badge-accent card-tag">Best Seller</span>
-                </div>
-                <div class="menu-card-body">
-                  <h3 class="menu-card-title">
-                    Pastel Spesial Ayam &amp; Sayur
-                  </h3>
-                  <p class="menu-card-desc">
-                    Kulit renyah berlapis dengan isian bihun lembut, wortel
-                    manis, suwiran ayam gurih, dan irisan telur. Dilengkapi cabe
-                    rawit segar.
-                  </p>
-                  <div class="menu-card-footer">
-                    <div class="menu-price">Rp 3.500 <span>/ pcs</span></div>
-                    <a
-                      href="pesan.html"
-                      class="btn-chika-primary btn-card-order"
-                      aria-label="Pesan Pastel Spesial"
-                    >
-                      Pesan <i class="bi bi-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <!-- Item 2: Risoles Ragout Mayo -->
-            <div class="col-md-6 col-lg-4">
-              <article class="menu-card">
-                <div class="menu-card-visual">
-                  <span class="food-avatar" role="img" aria-label="Risoles Mayo"
-                    >🌯</span
-                  >
-                  <span class="badge-chika card-tag">Favorit Acara</span>
-                </div>
-                <div class="menu-card-body">
-                  <h3 class="menu-card-title">Risoles Ragout &amp; Mayo</h3>
-                  <p class="menu-card-desc">
-                    Balutan kulit tipis lembut berlapis tepung roti keemasan.
-                    Isian krim ragout gurih lumer berpadu saus mayones dan sosis
-                    lezat.
-                  </p>
-                  <div class="menu-card-footer">
-                    <div class="menu-price">Rp 4.000 <span>/ pcs</span></div>
-                    <a
-                      href="pesan.html"
-                      class="btn-chika-primary btn-card-order"
-                      aria-label="Pesan Risoles Ragout Mayo"
-                    >
-                      Pesan <i class="bi bi-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <!-- Item 3: Kue Lumpur Kentang Pandan -->
-            <div class="col-md-6 col-lg-4">
-              <article class="menu-card">
-                <div class="menu-card-visual">
-                  <span
-                    class="food-avatar"
-                    role="img"
-                    aria-label="Kue Lumpur Kentang"
-                    >🥞</span
-                  >
-                  <span class="badge-accent card-tag">Kue Tradisional</span>
-                </div>
-                <div class="menu-card-body">
-                  <h3 class="menu-card-title">Kue Lumpur Kentang Pandan</h3>
-                  <p class="menu-card-desc">
-                    Kue basah legendaris bertekstur lembut meleleh di mulut
-                    dengan aroma pandan wangi serta topping daun pandan dan
-                    kismis manis.
-                  </p>
-                  <div class="menu-card-footer">
-                    <div class="menu-price">Rp 3.500 <span>/ pcs</span></div>
-                    <a
-                      href="pesan.html"
-                      class="btn-chika-primary btn-card-order"
-                      aria-label="Pesan Kue Lumpur Kentang"
-                    >
-                      Pesan <i class="bi bi-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <div class="text-center mt-5">
-            <a href="menu.html" class="btn-chika-primary">
-              Lihat Seluruh Daftar Menu &amp; Harga
-              <i class="bi bi-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- 4. Layanan Snack Box & Katering Acara -->
-      <section class="section-padding" aria-labelledby="judul-layanan-acara">
-        <div class="container">
-          <div class="catering-banner">
-            <div class="row align-items-center g-4">
-              <div class="col-lg-6">
-                <span class="badge-accent mb-2"
-                  >Layanan Katering &amp; Acara</span
-                >
-                <h2
-                  id="judul-layanan-acara"
-                  class="hero-title mb-3"
-                  style="font-size: 2.1rem"
-                >
-                  Butuh Konsumsi Rapi untuk
-                  <span class="text-highlight"
-                    >Acara Kampus atau Keluarga?</span
-                  >
-                </h2>
-                <p class="text-muted mb-4">
-                  Kami siap membantu Anda menyediakan paket snack box
-                  berkualitas dengan isi yang bisa disesuaikan keinginan. Cocok
-                  untuk seminar ITATS, rapat himpunan, arisan keluarga, hingga
-                  pengajian.
-                </p>
-                <ul class="list-unstyled d-flex flex-column gap-2 mb-4">
-                  <li class="d-flex align-items-center gap-2">
-                    <i class="bi bi-check-circle-fill text-success"></i>
-                    <span>Kombinasi kue manis &amp; gurih sesuai anggaran</span>
-                  </li>
-                  <li class="d-flex align-items-center gap-2">
-                    <i class="bi bi-check-circle-fill text-success"></i>
-                    <span>Dus kemasan rapi, bersih, dan higienis</span>
-                  </li>
-                  <li class="d-flex align-items-center gap-2">
-                    <i class="bi bi-check-circle-fill text-success"></i>
-                    <span
-                      >Pengantaran tepat waktu ke lokasi acara di Surabaya</span
-                    >
-                  </li>
-                </ul>
-                <a href="pesan.html" class="btn-chika-accent">
-                  <i class="bi bi-box-seam"></i> Pesan Paket Snack Box Sekarang
-                </a>
-              </div>
-
-              <div class="col-lg-6">
-                <div class="bg-white p-4 rounded-4 border">
-                  <h3 class="h5 mb-4 text-primary-dark">
-                    3 Langkah Mudah Pemesanan
-                  </h3>
-
-                  <div class="step-box">
-                    <div class="step-num">1</div>
-                    <div class="step-content">
-                      <h4>Pilih Menu Favorit</h4>
-                      <p>
-                        Tentukan pilihan camilan dan jumlah porsi snack box yang
-                        Anda butuhkan.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="step-box">
-                    <div class="step-num">2</div>
-                    <div class="step-content">
-                      <h4>Isi Form Pemesanan</h4>
-                      <p>
-                        Masukkan tanggal acara, alamat tujuan pengiriman, dan
-                        catatan khusus pesanan.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="step-box mb-0">
-                    <div class="step-num">3</div>
-                    <div class="step-content">
-                      <h4>Pesanan Diantar Fresh</h4>
-                      <p>
-                        Dapur kami memasak fresh sebelum jam acara dan
-                        mengantarkannya tepat waktu.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 5. Sekilas Tentang Kami (Teaser Kisah Dapur) -->
-      <section
-        class="section-padding bg-white"
-        aria-labelledby="judul-tentang-kami"
-      >
-        <div class="container">
-          <div class="row align-items-center g-5">
-            <div class="col-lg-6">
-              <div class="story-img-container">
-                <img
-                  src="img/dapur-cemal-cemil.jpg"
-                  alt="Suasana penyiapan dan packing aneka kue camilan di dapur Cemal-Cemil-Chika"
-                  width="800"
-                  height="533"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <span class="section-tag">Kisah Dapur Kami</span>
-              <h2 id="judul-tentang-kami" class="section-title">
-                Berawal dari Hal Kecil, Tumbuh dengan Rasa
-              </h2>
-              <p class="text-muted mb-3">
-                Perjalanan Cemal-Cemil-Chika dimulai pada tahun 2018 dari
-                menitipkan kerupuk dan kacang di warung sekitar. Berbekal tekad
-                kuat dan kecintaan pada masakan rumahan, kami terus berinovasi
-                melewati berbagai masa hingga kini dipercaya menyajikan aneka
-                camilan lezat untuk pelanggan setia di Surabaya.
-              </p>
-              <p class="text-muted mb-4">
-                Setiap menu diracik langsung oleh Ibu dengan dedikasi tinggi
-                agar setiap gigitan menghadirkan kehangatan masakan rumah yang
-                tak tergantikan.
-              </p>
-              <div class="d-flex gap-3">
-                <a href="about.html" class="btn-chika-outline">
-                  <i class="bi bi-book"></i> Baca Cerita Selengkapnya
-                </a>
-                <a href="image.html" class="btn-chika-light">
-                  <i class="bi bi-images"></i> Lihat Galeri Dapur
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 6. Testimoni Pelanggan -->
-      <section class="section-padding" aria-labelledby="judul-testimoni">
-        <div class="container">
-          <div class="text-center">
-            <span class="section-tag">Kata Mereka</span>
-            <h2 id="judul-testimoni" class="section-title">
-              Apa Kata Pelanggan Kami?
-            </h2>
-            <p class="section-desc">
-              Kepuasan pelanggan adalah kebanggaan terbesar dapur kami. Berikut
-              pengalaman mereka menikmati hidangan Cemal-Cemil-Chika.
-            </p>
-          </div>
-
-          <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-              <article class="testimonial-card">
-                <div>
-                  <div
-                    class="testimonial-stars"
-                    aria-label="Rating 5 dari 5 bintang"
-                  >
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <p class="testimonial-text">
-                    "Pesan 80 box pastel dan kue lumpur untuk seminar kampus di
-                    ITATS. Datangnya tepat waktu, masih hangat, dan dosen-dosen
-                    suka banget karena kulit pastelnya renyah dan isiannya padat
-                    gurih!"
-                  </p>
-                </div>
-                <div class="testimonial-author">
-                  <div class="author-avatar">D</div>
-                  <div class="author-info">
-                    <h4>Dimas Prasetyo</h4>
-                    <span>Ketua Panitia Seminar Kampus</span>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-              <article class="testimonial-card">
-                <div>
-                  <div
-                    class="testimonial-stars"
-                    aria-label="Rating 5 dari 5 bintang"
-                  >
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <p class="testimonial-text">
-                    "Risoles mayonya juara banget, lumer di mulut dan tepung
-                    rotinya garing sempurna. Donat mesesnya juga empuk banget,
-                    anak-anak di rumah selalu nagih setiap akhir pekan."
-                  </p>
-                </div>
-                <div class="testimonial-author">
-                  <div class="author-avatar">S</div>
-                  <div class="author-info">
-                    <h4>Siti Rahmawati</h4>
-                    <span>Pelanggan Arisan Keluarga</span>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-              <article class="testimonial-card">
-                <div>
-                  <div
-                    class="testimonial-stars"
-                    aria-label="Rating 5 dari 5 bintang"
-                  >
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <p class="testimonial-text">
-                    "Paling praktis kalau lagi nugas bareng teman-teman kosan.
-                    Tinggal order siomay ayam sama martabak mie, harganya murah
-                    meriah tapi rasa bumbunya mantap berasa masakan rumah
-                    sendiri."
-                  </p>
-                </div>
-                <div class="testimonial-author">
-                  <div class="author-avatar">R</div>
-                  <div class="author-info">
-                    <h4>Rizky Aditya</h4>
-                    <span>Mahasiswa ITATS</span>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 7. Call To Action (CTA) Section -->
-      <section class="container pb-5" aria-labelledby="judul-cta">
-        <div class="cta-box">
-          <span class="badge-accent mb-3">Pesanan Fresh Setiap Hari</span>
-          <h2 id="judul-cta">Lapar atau Butuh Snack Box untuk Acara Anda?</h2>
-          <p>
-            Jangan biarkan momen spesial Anda tanpa camilan lezat. Hubungi dapur
-            kami sekarang dan nikmati kehangatan cita rasa khas
-            Cemal-Cemil-Chika!
-          </p>
-          <div class="d-flex flex-wrap justify-content-center gap-3">
-            <a href="pesan.html" class="btn-chika-accent">
-              <i class="bi bi-bag-check-fill"></i> Pesan Melalui Formulir
-            </a>
-            <a href="contact.html" class="btn-chika-light">
-              <i class="bi bi-telephone-fill"></i> Hubungi Kontak Kami
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="chika-footer">
+  <!-- Header & Navigasi -->
+  <header>
+    <nav class="navbar navbar-expand-lg chika-navbar" aria-label="Navigasi utama">
       <div class="container">
-        <div class="row g-4 justify-content-between">
-          <!-- Kolom 1: Profil Usaha -->
-          <div class="col-lg-4 col-md-6">
-            <div class="d-flex align-items-center gap-2 mb-3">
-              <span class="brand-icon"><i class="bi bi-egg-fried"></i></span>
-              <span class="h4 mb-0 text-white font-fredoka"
-                >Cemal-Cemil-Chika</span
-              >
+        <a class="navbar-brand fw-bold" href="index.html">
+          <span class="brand-icon"><i class="bi bi-egg-fried"></i></span>
+          <span>Cemal-Cemil-Chika</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuUtama"
+          aria-controls="menuUtama" aria-expanded="false" aria-label="Buka menu navigasi">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuUtama">
+          <ul class="navbar-nav ms-auto gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html" aria-current="page">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pesan.html">Pesan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Kontak</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="image.html">Galeri</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Konten Utama -->
+  <main id="konten-utama">
+    <!-- 1. Hero Section -->
+    <section class="hero-section" aria-labelledby="judul-hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <span class="badge-accent mb-3">
+              <i class="bi bi-stars"></i> Resep Autentik Rumahan Sejak 2018
+            </span>
+            <h1 id="judul-hero" class="hero-title">
+              Hangatnya Camilan Rumahan,
+              <span class="text-highlight">Dibuat Sepenuh Hati</span>
+            </h1>
+            <p class="hero-lead">
+              Kami sajikan
+              hidangan segar, higienis, dan pas di lidah untuk menemani setiap
+              waktu santai Anda.
+            </p>
+            <div class="d-flex flex-wrap gap-3 hero-cta-group">
+              <a href="menu.html" class="btn-chika-accent">
+                <i class="bi bi-card-list"></i> Lihat Katalog Menu
+              </a>
+              <a href="pesan.html" class="btn-chika-outline">
+                <i class="bi bi-cart-check"></i> Pesan Sekarang
+              </a>
             </div>
-            <p>
-              Usaha kuliner rumahan lokal UMKM di Surabaya yang menghadirkan
-              aneka camilan gurih, kue basah lezat, dan layanan katering snack
-              box berkualitas sejak 2018.
-            </p>
-            <div class="d-flex gap-2 mt-3">
-              <span class="badge-accent"
-                ><i class="bi bi-geo-alt-fill"></i> Surabaya, Jawa Timur</span
-              >
-            </div>
+          </div>
+          <div class="col-lg-5">
+            <figure class="hero-image-card mb-0">
+              <img src="img/dapur-cemal-cemil.jpg"
+                alt="Dokumentasi aneka ragam kue basah dan camilan hangat buatan Cemal-Cemil-Chika siap kirim"
+                width="800" height="533" loading="eager" />
+              <figcaption class="visually-hidden">
+                Koleksi kue pastel, donat cokelat meses, dan jajanan pasar
+                siap antar Cemal-Cemil-Chika
+              </figcaption>
+              <div class="hero-floating-badge">
+                <div class="badge-icon">
+                  <i class="bi bi-patch-check-fill"></i>
+                </div>
+                <div>
+                  <strong>100% Halal &amp; Higienis</strong>
+                  <small>Selalu dimasak segar tiap pagi</small>
+                </div>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Keunggulan / Value Proposition -->
+    <section class="section-padding" aria-labelledby="judul-keunggulan">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Keunggulan Dapur Kami</span>
+          <h2 id="judul-keunggulan" class="section-title">
+            Mengapa Memilih Cemal-Cemil-Chika?
+          </h2>
+          <p class="section-desc">
+            Komitmen kami adalah menghadirkan rasa masakan rumah yang otentik,
+            menggunakan bahan segar pilihan dengan pelayanan ramah dan
+            terpercaya.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <article class="feature-card">
+              <div class="feature-icon-bubble">
+                <i class="bi bi-basket3"></i>
+              </div>
+              <h3>Bahan Alami &amp; Segar</h3>
+              <p>
+                Bahan dipilih dari pasar lokal, diolah bersih tanpa
+                bahan pengawet atau pemanis buatan.
+              </p>
+            </article>
           </div>
 
-          <!-- Kolom 2: Navigasi Cepat -->
-          <div class="col-lg-2 col-md-6">
-            <h3>Navigasi</h3>
-            <ul class="footer-links">
-              <li>
-                <a href="index.html"
-                  ><i class="bi bi-chevron-right"></i> Beranda</a
-                >
-              </li>
-              <li>
-                <a href="menu.html"
-                  ><i class="bi bi-chevron-right"></i> Daftar Menu</a
-                >
-              </li>
-              <li>
-                <a href="pesan.html"
-                  ><i class="bi bi-chevron-right"></i> Formulir Pesan</a
-                >
-              </li>
-              <li>
-                <a href="about.html"
-                  ><i class="bi bi-chevron-right"></i> Tentang Kami</a
-                >
-              </li>
-              <li>
-                <a href="contact.html"
-                  ><i class="bi bi-chevron-right"></i> Kontak &amp; Lokasi</a
-                >
-              </li>
-              <li>
-                <a href="image.html"
-                  ><i class="bi bi-chevron-right"></i> Galeri Foto</a
-                >
-              </li>
-            </ul>
+          <div class="col-md-6 col-lg-3">
+            <article class="feature-card">
+              <div class="feature-icon-bubble">
+                <i class="bi bi-heart-pulse"></i>
+              </div>
+              <h3>Resep Autentik Ibu</h3>
+              <p>
+                Resep turun-temurun dengan racikan bumbu pas, menghadirkan
+                aroma dan rasa nostalgia masakan rumah.
+              </p>
+            </article>
           </div>
 
-          <!-- Kolom 3: Jam Layanan -->
-          <div class="col-lg-3 col-md-6">
-            <h3>Jam Layanan</h3>
-            <p class="mb-2">
-              <i class="bi bi-clock me-2 text-warning"></i>
-              <strong>Senin – Sabtu:</strong><br />07.30 – 18.00 WIB
-            </p>
-            <p class="mb-2">
-              <i class="bi bi-clock-history me-2 text-warning"></i>
-              <strong>Minggu / Hari Libur:</strong><br />Khusus pesanan
-              pre-order acara
-            </p>
-            <p class="small text-muted mt-2">
-              Tersedia juga pemesanan online melalui ShopeeFood &amp; WhatsApp.
-            </p>
+          <div class="col-md-6 col-lg-3">
+            <article class="feature-card">
+              <div class="feature-icon-bubble">
+                <i class="bi bi-box2-heart"></i>
+              </div>
+              <h3>Siap Pesanan Acara</h3>
+              <p>
+                Spesialis snack box untuk rapat, acara kampus, arisan
+                keluarga, syukuran, dan acara naik formal maupun nonformal.
+              </p>
+            </article>
           </div>
 
-          <!-- Kolom 4: Info Kampus & Kontak -->
-          <div class="col-lg-3 col-md-6">
-            <h3>Dapur Kami</h3>
-            <p class="mb-2">
-              <i class="bi bi-geo-alt me-2 text-warning"></i> Sekitar Area
-              Kampus ITATS, Surabaya
-            </p>
-            <p class="mb-2">
-              <i class="bi bi-whatsapp me-2 text-success"></i> Hubungi via
-              Halaman Kontak
-            </p>
-            <p class="small text-muted">
-              Melayani pesan antar (delivery) dan ambil di tempat (takeaway).
-            </p>
+          <div class="col-md-6 col-lg-3">
+            <article class="feature-card">
+              <div class="feature-icon-bubble">
+                <i class="bi bi-wallet2"></i>
+              </div>
+              <h3>Harga Bersahabat</h3>
+              <p>
+                Kualitas rasa terjamin istimewa dengan harga terjangkau yang
+                ramah di kantong pelanggan.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Menu Favorit Pilihan Pelanggan -->
+    <section class="section-padding bg-white" aria-labelledby="judul-menu-favorit">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Paling Banyak Dicari</span>
+          <h2 id="judul-menu-favorit" class="section-title">
+            Menu Favorit Andalan
+          </h2>
+          <p class="section-desc">
+            Pilihan hidangan yang paling sering dipesan oleh pelanggan setia
+            kami untuk cemilan harian maupun suguhan tamu.
+          </p>
+        </div>
+
+                <div class="row g-4">
+          <!-- Item 1: Somay Ayam -->
+          <div class="col-md-6 col-lg-4">
+            <article class="menu-card">
+              <div class="menu-card-visual">
+                <img src="img/somay-ayam.jpeg" alt="Somay isi ayam buatan rumah" class="food-avatar" width="400" height="300" loading="lazy" />
+                <span class="badge-accent card-tag">Best Seller</span>
+              </div>
+              <div class="menu-card-body">
+                <h3 class="menu-card-title">
+                  Somay isi ayam buatan rumah
+                </h3>
+                <p class="menu-card-desc">
+                  Somay isi ayam dengan kulit yang lembut dan isian ayam yang enak dan gurih.
+                </p>
+                <div class="menu-card-footer">
+                  <div class="menu-price">Rp 40.000 <span>/ pcs</span></div>
+                  <a href="pesan.html" class="btn-chika-primary btn-card-order" aria-label="Pesan Somay Ayam">
+                    Pesan <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Item 2: Martabak Mie -->
+          <div class="col-md-6 col-lg-4">
+            <article class="menu-card">
+              <div class="menu-card-visual">
+                <img src="img/martabak.jpeg" alt="Martabak mie renyah gurih" class="food-avatar" width="400" height="300" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h3 class="menu-card-title">Martabak mie</h3>
+                <p class="menu-card-desc">
+                  Martabak mie dengan kulit luar yang renyah dan isian mie yang gurih dan manis, ditambah dengan saus petis dan cabe rawit.
+                </p>
+                <div class="menu-card-footer">
+                  <div class="menu-price">Rp 1.500 <span>/ biji</span></div>
+                  <a href="pesan.html" class="btn-chika-primary btn-card-order" aria-label="Pesan Martabak Mie">
+                    Pesan <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Item 3: Sempol Ayam -->
+          <div class="col-md-6 col-lg-4">
+            <article class="menu-card">
+              <div class="menu-card-visual">
+                <img src="img/sempol.jpeg" alt="Sempol ayam balut telur" class="food-avatar" width="400" height="300" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h3 class="menu-card-title">Sempol</h3>
+                <p class="menu-card-desc">
+                  Sempol ayam dengan balutan telur serta saus buatan rumahan yang gurih dan manis.
+                </p>
+                <div class="menu-card-footer">
+                  <div class="menu-price">Rp 1.500 <span>/ biji</span></div>
+                  <a href="pesan.html" class="btn-chika-primary btn-card-order" aria-label="Pesan Sempol Ayam">
+                    Pesan <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
 
-        <!-- Copyright Bottom Bar -->
-        <div class="footer-bottom">
-          <p class="mb-0">
-            &copy; 2026 Cemal-Cemil-Chika. Dibuat oleh Kelompok Kelas V TI
-            ITATS.
+        <div class="text-center mt-5">
+          <a href="menu.html" class="btn-chika-primary">
+            Lihat Seluruh Daftar Menu &amp; Harga
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Layanan Snack Box & Katering Acara -->
+    <section class="section-padding" aria-labelledby="judul-layanan-acara">
+      <div class="container">
+        <div class="catering-banner">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+              <span class="badge-accent mb-2">Layanan Katering &amp; Acara</span>
+              <h2 id="judul-layanan-acara" class="hero-title mb-3">
+                Butuh Konsumsi Rapi untuk
+                <span class="text-highlight">Acara Kampus atau Keluarga?</span>
+              </h2>
+              <p class="text-muted mb-4">
+                Kami siap membantu Anda menyediakan paket snack box
+                berkualitas dengan isi yang bisa disesuaikan keinginan. Cocok
+                untuk berbagai acara mulai dari non-formal hingga
+                acara formal
+                </p>
+              <ul class="list-unstyled d-flex flex-column gap-2 mb-4">
+                <li class="d-flex align-items-center gap-2">
+                  <i class="bi bi-check-circle-fill text-success"></i>
+                  <span>Konsultasi estimasi biaya &amp; rekomendasi jajanan</span>
+                </li>
+                <li class="d-flex align-items-center gap-2">
+                  <i class="bi bi-check-circle-fill text-success"></i>
+                  <span>Dus kemasan rapi, bersih, dan higienis</span>
+                </li>
+                <li class="d-flex align-items-center gap-2">
+                  <i class="bi bi-check-circle-fill text-success"></i>
+                  <span>Pengantaran tepat waktu ke lokasi acara di area Surabaya</span>
+                </li>
+              </ul>
+              <a href="pesan.html" class="btn-chika-accent">
+                <i class="bi bi-box-seam"></i> Pesan Paket Snack Box Sekarang
+              </a>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="bg-white p-4 rounded-4 border">
+                <h3 class="h5 mb-4 text-primary-dark">
+                  3 Langkah Mudah Pemesanan
+                </h3>
+
+                <div class="step-box">
+                  <div class="step-num">1</div>
+                  <div class="step-content">
+                    <h4>Pilih Menu Favorit</h4>
+                    <p>
+                      Tentukan pilihan camilan dan jumlah porsi snack box yang
+                      Anda butuhkan.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="step-box">
+                  <div class="step-num">2</div>
+                  <div class="step-content">
+                    <h4>Konsultasi Harga dan Estimasi biaya</h4>
+                    <p>
+                      Masuk ke form untuk menghubungi nomor terkait
+                    </p>
+                  </div>
+                </div>
+
+                <div class="step-box mb-0">
+                  <div class="step-num">3</div>
+                  <div class="step-content">
+                    <h4>Pengiriman</h4>
+                    <p>
+                      Pengiriman menyesuaikan banyaknya orderan dan ongkos ongkir terkait
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Sekilas Tentang Kami (Teaser Kisah Dapur) -->
+    <section class="section-padding bg-white" aria-labelledby="judul-tentang-kami">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="story-img-container">
+              <img src="img/Logo.jpeg"
+                alt="Suasana penyiapan dan packing aneka kue camilan di dapur Cemal-Cemil-Chika" width="800"
+                height="533" loading="lazy" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <span class="section-tag">Kisah Dapur Kami</span>
+            <h2 id="judul-tentang-kami" class="section-title">
+              Berawal dari Hal Kecil, Tumbuh dengan Rasa
+            </h2>
+            <p class="text-muted mb-3">
+              Perjalanan Cemal-Cemil-Chika dimulai pada tahun 2018 dari
+              menitipkan kerupuk dan kacang di warung sekitar. Berbekal tekad
+              kuat dan kecintaan pada masakan rumahan, kami terus berinovasi
+              melewati berbagai masa hingga kini dipercaya menyajikan aneka
+              camilan lezat untuk pelanggan setia di Surabaya.
+            </p>
+            <p class="text-muted mb-4">
+              Setiap menu diracik langsung oleh Ibu dengan dedikasi tinggi
+              agar setiap gigitan menghadirkan kehangatan masakan rumah yang
+              tak tergantikan.
+            </p>
+            <div class="d-flex gap-3">
+              <a href="about.html" class="btn-chika-outline">
+                <i class="bi bi-book"></i> Baca Cerita Selengkapnya
+              </a>
+              <a href="image.html" class="btn-chika-light">
+                <i class="bi bi-images"></i> Lihat Galeri Dapur
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Testimoni Pelanggan -->
+    <section class="section-padding" aria-labelledby="judul-testimoni">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Kata Mereka</span>
+          <h2 id="judul-testimoni" class="section-title">
+            Apa Kata Pelanggan Kami?
+          </h2>
+          <p class="section-desc">
+            Kepuasan pelanggan adalah kebanggaan terbesar dapur kami. Berikut
+            pengalaman mereka menikmati hidangan Cemal-Cemil-Chika.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="testimonial-card">
+              <div>
+                <div class="testimonial-stars" aria-label="Rating 5 dari 5 bintang">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Pesan 80 box pastel dan risol ayam untuk seminar di
+                  Acara formal. Datangnya tepat waktu, masih hangat, dan panitia serta tamu
+                  yang hadir
+                  suka banget karena kulit risolnya renyah lembut dan isiannya padat
+                  gurih!"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">D</div>
+                <div class="author-info">
+                  <h4>Dimas Prasetyo</h4>
+                  <span>Penyelenggara Acara</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <article class="testimonial-card">
+              <div>
+                <div class="testimonial-stars" aria-label="Rating 5 dari 5 bintang">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Risoles mayonya juara banget, lumer di mulut dan tepung
+                  rotinya garing sempurna. Donat mesesnya juga empuk banget,
+                  anak-anak di rumah selalu nagih setiap akhir pekan."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">S</div>
+                <div class="author-info">
+                  <h4>Siti Rahmawati</h4>
+                  <span>Pelanggan Arisan Keluarga</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <article class="testimonial-card">
+              <div>
+                <div class="testimonial-stars" aria-label="Rating 5 dari 5 bintang">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Paling praktis kalau lagi nugas bareng teman-teman kosan.
+                  Tinggal order siomay ayam sama martabak mie, harganya murah
+                  meriah."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">R</div>
+                <div class="author-info">
+                  <h4>Rizky Aditya</h4>
+                  <span>Mahasiswa</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Call To Action (CTA) Section -->
+    <section class="container pb-5" aria-labelledby="judul-cta">
+      <div class="cta-box">
+        <h2 id="judul-cta">Lapar atau Butuh Snack Box untuk Acara Anda?</h2>
+        <p>
+          Jangan biarkan momen spesial Anda tanpa camilan lezat. Hubungi dapur
+          kami sekarang dan nikmati kehangatan cita rasa khas
+          Cemal-Cemil-Chika!
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="pesan.html" class="btn-chika-accent">
+            <i class="bi bi-bag-check-fill"></i> Pesan Melalui Formulir
+          </a>
+          <a href="contact.html" class="btn-chika-light">
+            <i class="bi bi-telephone-fill"></i> Hubungi Kontak Kami
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="chika-footer">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        <!-- Kolom 1: Profil Usaha -->
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <span class="brand-icon"><i class="bi bi-egg-fried"></i></span>
+            <span class="h4 mb-0 text-white font-fredoka">Cemal-Cemil-Chika</span>
+          </div>
+          <p>
+            Usaha kuliner rumahan lokal UMKM di Surabaya yang menghadirkan
+            aneka camilan gurih, kue basah lezat, dan layanan katering snack
+            box berkualitas sejak 2018.
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <span class="badge-accent"><i class="bi bi-geo-alt-fill"></i> Surabaya, Jawa Timur</span>
+          </div>
+        </div>
+
+        <!-- Kolom 2: Navigasi Cepat -->
+        <div class="col-lg-2 col-md-6">
+          <h3>Navigasi</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="index.html"><i class="bi bi-chevron-right"></i> Beranda</a>
+            </li>
+            <li>
+              <a href="menu.html"><i class="bi bi-chevron-right"></i> Daftar Menu</a>
+            </li>
+            <li>
+              <a href="pesan.html"><i class="bi bi-chevron-right"></i> Formulir Pesan</a>
+            </li>
+            <li>
+              <a href="about.html"><i class="bi bi-chevron-right"></i> Tentang Kami</a>
+            </li>
+            <li>
+              <a href="contact.html"><i class="bi bi-chevron-right"></i> Kontak &amp; Lokasi</a>
+            </li>
+            <li>
+              <a href="image.html"><i class="bi bi-chevron-right"></i> Galeri Foto</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Kolom 3: Jam Layanan -->
+        <div class="col-lg-3 col-md-6">
+          <h3>Jam Layanan</h3>
+          <p class="mb-2">
+            <i class="bi bi-clock me-2 text-warning"></i>
+            <strong>Senin – Sabtu:</strong><br />07.30 – 18.00 WIB
+          </p>
+          <p class="mb-2">
+            <i class="bi bi-clock-history me-2 text-warning"></i>
+            <strong>Minggu / Hari Libur:</strong><br />Khusus pesanan
+            pre-order acara
+          </p>
+          <p class="small text-muted mt-2">
+            Tersedia juga pemesanan online melalui ShopeeFood &amp; WhatsApp.
+          </p>
+        </div>
+
+        <!-- Kolom 4: Info Kampus & Kontak -->
+        <div class="col-lg-3 col-md-6">
+          <h3>Dapur Kami</h3>
+          <p class="mb-2">
+            <i class="bi bi-geo-alt me-2 text-warning"></i> Sekitar Area
+            Surabaya timur, Gunung Anyar
+          </p>
+          <p class="mb-2">
+            <i class="bi bi-whatsapp me-2 text-success"></i> Hubungi via
+            Halaman Kontak
+          </p>
+          <p class="small text-muted">
+            Melayani pesan antar (delivery) dan ambil di tempat (takeaway).
           </p>
         </div>
       </div>
-    </footer>
 
-    <!-- Bootstrap 5.3 Bundle JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+      <!-- Copyright Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="mb-0">
+          &copy; 2026 Cemal-Cemil-Chika. Dibuat oleh Kelompok Kelas V TI
+          ITATS.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
