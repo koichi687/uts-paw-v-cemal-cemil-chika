@@ -2,12 +2,13 @@
 
 Situs web multi-halaman untuk **Cemal-Cemil**, sebuah usaha kuliner/warung makan rumahan lokal (UMKM), dibangun menggunakan HTML5 semantik, CSS, dan framework CSS Bootstrap 5.3.
 
-- **Tautan GitHub Pages:** *(akan ditambahkan setelah deploy)*
+- **Tautan GitHub Pages:** _(akan ditambahkan setelah deploy)_
 - **Kelas:** V — Teknik Informatika, ITATS
 
 ---
 
 ## 1. Informasi Usaha & Target Pengguna
+
 - **Sub-tema:** 1. Kedai kopi / warung makan
 - **Nama Usaha:** Cemal-Cemil-Chika
 - **Target Pengguna:** Pelanggan sekitar (mahasiswa, pekerja, dan keluarga) yang ingin melihat daftar menu, informasi paket/harga, galeri dokumentasi pesanan, lokasi warung, serta melakukan pemesanan/reservasi secara cepat melalui ponsel maupun desktop.
@@ -16,11 +17,11 @@ Situs web multi-halaman untuk **Cemal-Cemil**, sebuah usaha kuliner/warung makan
 
 ## 2. Anggota Kelompok & Pembagian Halaman
 
-| No        | NPM             | Nama Lengkap                       | Akun GitHub            | Halaman yang Dikerjakan                          |
-| --------- | --------------- | ---------------------------------- | ---------------------- | ------------------------------------------------ |
-| 1 (Ketua) | 06.2025.1.07854 | Muhammad Farel Eka Saputra         | `@koichi687`           | `image.html`, `about.html`                       |
-| 2         | 06.2025.1.07859 | Reno Alviansyah Kharel             | `@rnalvnsyh`           | `menu.html`, `contact.html`, `terima-kasih.html` |
-| 3         | 06.2025.1.07860 | Muhammad Aquillah Putera Maheswara | `@mahheswaraa`         | `pesan.html`, `index.html`                       |
+| No        | NPM             | Nama Lengkap                       | Akun GitHub    | Halaman yang Dikerjakan                          |
+| --------- | --------------- | ---------------------------------- | -------------- | ------------------------------------------------ |
+| 1 (Ketua) | 06.2025.1.07854 | Muhammad Farel Eka Saputra         | `@koichi687`   | `image.html`, `about.html`                       |
+| 2         | 06.2025.1.07859 | Reno Alviansyah Kharel             | `@rnalvnsyh`   | `pesan.html` `contact.html`, `terima-kasih.html` |
+| 3         | 06.2025.1.07860 | Muhammad Aquillah Putera Maheswara | `@mahheswaraa` | `menu.html`, `index.html`                        |
 
 ---
 
@@ -38,25 +39,28 @@ index.html (Beranda / P1)
 
 ---
 
-## 4. Desain Tata Letak & Token CSS *(Akan dilengkapi pada tahap CSS)*
-- **Sketsa Denah (Mobile & Desktop):** *(sedang disiapkan / akan dilampirkan)*
-- **Tabel Custom Property (`:root`):** *(akan dilengkapi setelah perancangan `css/style.css`)*
-- **Tabel Breakpoint (`em`/`rem`):** *(akan dilengkapi setelah implementasi responsif)*
+## 4. Desain Tata Letak & Token CSS _(Akan dilengkapi pada tahap CSS)_
+
+- **Sketsa Denah (Mobile & Desktop):** _(sedang disiapkan / akan dilampirkan)_
+- **Tabel Custom Property (`:root`):** _(akan dilengkapi setelah perancangan `css/style.css`)_
+- **Tabel Breakpoint (`em`/`rem`):** _(akan dilengkapi setelah implementasi responsif)_
 
 ---
 
-## 5. Framework CSS vs CSS Murni *(Akan dilengkapi pada tahap CSS)*
+## 5. Framework CSS vs CSS Murni _(Akan dilengkapi pada tahap CSS)_
+
 - **Framework yang Dipilih:** `[Bootstrap 5.3]`
-- **Pembagian Penggunaan & Perbandingan Komponen:** *(akan dijelaskan setelah implementasi framework dan `css/style.css` selesai)*
+- **Pembagian Penggunaan & Perbandingan Komponen:** _(akan dijelaskan setelah implementasi framework dan `css/style.css` selesai)_
 
 ---
 
-## 6. Pengujian & Tangkapan Layar *(Akan dilengkapi sebelum pengumpulan)*
-- **Tangkapan Layar (360px, 768px, 1280px, Mode Gelap):** *(menunggu implementasi selesai)*
-- **Hasil W3C Markup Validator:** *(menunggu validasi tiap halaman)*
-- **Skor Lighthouse Accessibility (≥ 90):** *(menunggu audit)*
-- **Catatan Uji Navigasi Keyboard:** *(menunggu pengujian)*
+## 6. Pengujian & Tangkapan Layar _(Akan dilengkapi sebelum pengumpulan)_
+
+- **Tangkapan Layar (360px, 768px, 1280px, Mode Gelap):** _(menunggu implementasi selesai)_
+- **Hasil W3C Markup Validator:** _(menunggu validasi tiap halaman)_
+- **Skor Lighthouse Accessibility (≥ 90):** _(menunggu audit)_
+- **Catatan Uji Navigasi Keyboard:** _(menunggu pengujian)_
 
 ---
 
-## 7. Penggunaan AI *(Akan Dilengkapi Di Akhir)*
+## 7. Penggunaan AI _(Akan Dilengkapi Di Akhir)_
