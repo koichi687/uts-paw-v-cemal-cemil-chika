@@ -1,0 +1,111 @@
+/* === 1. FONT & PALET WARNA LOGO CEMAL-CEMIL CHIKA === */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap');
+
+:root {
+    --bg-page: #FFF8FC;
+    /* Pink-putih lembut dari latar logo */
+    --surface: #FFFFFF;
+    /* Putih bersih untuk card/konten */
+    --primary: #9B729E;
+    /* Dusty mauve dari pita logo */
+    --primary-dark: #5A2D53;
+    /* Deep plum dari teks pita */
+    --primary-soft: #F3E5F2;
+    /* Lavender pastel untuk highlight */
+    --accent: #E09132;
+    /* Emas karamel dari wajan & spatula */
+    --accent-hover: #C87A1E;
+    --text-main: #4A3531;
+    /* Cokelat hangat dari outline logo */
+    --text-muted: #7D6460;
+    --border-soft: #EEDCEB;
+    --shadow-soft: 0 8px 24px rgba(90, 45, 83, 0.08);
+    --radius: 16px;
+}
+
+/* === 2. RESET & BASE === */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Fredoka', sans-serif;
+    color: var(--primary-dark);
+    line-height: 1.3;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* === 3. SKIP LINK (AKSESIBILITAS) === */
+a[href="#konten-utama"] {
+    position: absolute;
+    top: -100px;
+    left: 16px;
+    background: var(--primary-dark);
+    color: #FFFFFF;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    z-index: 1000;
+}
+
+a[href="#konten-utama"]:focus {
+    top: 16px;
+}
+
+/* === 4. NAVBAR CHIKA === */
+.chika-navbar {
+    background-color: var(--surface);
+    border-bottom: 2px solid var(--border-soft);
+    box-shadow: 0 4px 16px rgba(90, 45, 83, 0.06);
+    padding: 0.75rem 0;
+}
+
+.chika-navbar .navbar-brand {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.4rem;
+    color: var(--primary-dark);
+}
+
+.chika-navbar .nav-link {
+    font-weight: 600;
+    color: var(--text-main);
+    padding: 0.5rem 1rem !important;
+    border-radius: 999px;
+    transition: all 0.2s ease;
+}
+
+.chika-navbar .nav-link:hover {
+    background-color: var(--primary-soft);
+    color: var(--primary-dark);
+}
+
+.chika-navbar .nav-link.active {
+    background-color: var(--primary);
+    color: #FFFFFF;
+}
