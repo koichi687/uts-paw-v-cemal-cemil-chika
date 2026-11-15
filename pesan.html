@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Sekarang — Cemal-Cemil-Chika</title>
+    <meta name="description"
+        content="Formulir pemesanan camilan rumahan, frozen food, dan paket katering acara di Cemal-Cemil-Chika.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a href="#konten-utama">Lewati ke konten utama</a>
+
+    <header>
+        <nav class="navbar navbar-expand-lg chika-navbar" aria-label="Navigasi utama">
+            <div class="container">
+                <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+                    Cemal-Cemil-Chika
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuUtama"
+                    aria-controls="menuUtama" aria-expanded="false" aria-label="Buka menu navigasi">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuUtama">
+                    <ul class="navbar-nav ms-auto gap-lg-2">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="pesan.html" aria-current="page">Pesan</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Tentang</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+                        <li class="nav-item"><a class="nav-link" href="image.html">Galeri</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="konten-utama" class="py-5">
+        <div class="container">
+            <section class="mb-4" aria-labelledby="judul-pesan">
+                <span class="chika-badge mb-2">Pre-Order &amp; Katering</span>
+                <h1 id="judul-pesan" class="mb-2">Pesan Camilan &amp; Hidangan Rumahan</h1>
+                <p class="chika-muted mb-0">
+                    Isi formulir di bawah ini untuk memesan jajanan harian, stok frozen food, maupun paket acara.
+                </p>
+            </section>
+
+            <div class="row g-4 align-items-start">
+                <div class="col-lg-7">
+                    <section class="chika-card p-4 p-md-5" aria-labelledby="judul-form-order">
+                        <span class="chika-card-tag">Made by Order</span>
+                        <h2 id="judul-form-order" class="h4 mb-4">Formulir Pemesanan</h2>
+
+                        <form action="terima-kasih.html" method="get">
+                            <div class="mb-3">
+                                <label for="namaPemesan" class="form-label fw-semibold">Nama Lengkap *</label>
+                                <input type="text" class="form-control chika-input" id="namaPemesan" name="nama"
+                                    autocomplete="name" minlength="3" aria-describedby="bantuanNama"
+                                    placeholder="Contoh: Rina Sari" required>
+                                <div id="bantuanNama" class="form-text chika-muted">Minimal 3 karakter sesuai nama
+                                    penerima.</div>
+                            </div>
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <label for="noWa" class="form-label fw-semibold">Nomor WhatsApp *</label>
+                                    <input type="tel" class="form-control chika-input" id="noWa" name="whatsapp"
+                                        autocomplete="tel" inputmode="tel" pattern="^08[0-9]{8,12}$"
+                                        aria-describedby="bantuanWa" placeholder="081234567890" required>
+                                    <div id="bantuanWa" class="form-text chika-muted">Awali dengan 08 (10–14 digit
+                                        angka).</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="emailPemesan" class="form-label fw-semibold">Email Konfirmasi *</label>
+                                    <input type="email" class="form-control chika-input" id="emailPemesan" name="email"
+                                        autocomplete="email" inputmode="email" aria-describedby="bantuanEmail"
+                                        placeholder="nama@email.com" required>
+                                    <div id="bantuanEmail" class="form-text chika-muted">Untuk bukti pencatatan pesanan.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-5">
+                                    <label for="tanggalAmbil" class="form-label fw-semibold">Tanggal Dibutuhkan
+                                        *</label>
+                                    <input type="date" class="form-control chika-input" id="tanggalAmbil" name="tanggal"
+                                        aria-describedby="bantuanTanggal" required>
+                                    <div id="bantuanTanggal" class="form-text chika-muted">Acara besar minimal H-7.
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <label for="pilihanMenu" class="form-label fw-semibold">Pilih Menu *</label>
+                                    <select class="form-select chika-input" id="pilihanMenu" name="menu" required>
+                                        <option value="" selected disabled>-- Pilih menu andalan --</option>
+                                        <option value="Martabak Mie">Martabak Mie</option>
+                                        <option value="Siomay Ayam">Siomay Ayam</option>
+                                        <option value="Donat Cokelat">Donat Cokelat</option>
+                                        <option value="Pastel Ayam Sayur">Pastel Ayam Sayur</option>
+                                        <option value="Risoles Mayo">Risoles Mayo</option>
+                                        <option value="Paket Snack Box Acara">Paket Snack Box Acara (Custom)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-5">
+                                    <label for="jumlahPorsi" class="form-label fw-semibold">Jumlah (Porsi/Box) *</label>
+                                    <input type="number" class="form-control chika-input" id="jumlahPorsi" name="jumlah"
+                                        inputmode="numeric" min="1" max="500" value="1" aria-describedby="bantuanJumlah"
+                                        required>
+                                    <div id="bantuanJumlah" class="form-text chika-muted">Minimal 1, maksimal 500 porsi.
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <label for="metodeKirim" class="form-label fw-semibold">Metode Pengambilan *</label>
+                                    <select class="form-select chika-input" id="metodeKirim" name="pengiriman" required>
+                                        <option value="Ambil Sendiri di Dapur">Ambil Sendiri di Dapur</option>
+                                        <option value="Kirim Kurir Instan (Area Surabaya)">Kirim Kurir Instan (Area
+                                            Surabaya)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <fieldset class="mb-3 chika-check-group">
+                                <legend class="col-form-label fw-semibold pt-0">Kondisi Penyajian *</legend>
+                                <div class="d-flex flex-wrap gap-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="kondisi" id="kondisiMatang"
+                                            value="Siap Matang" checked>
+                                        <label class="form-check-label" for="kondisiMatang">Siap Matang (Fresh)</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="kondisi" id="kondisiFrozen"
+                                            value="Frozen Food">
+                                        <label class="form-check-label" for="kondisiFrozen">Frozen Food (Beku)</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="mb-3 chika-check-group">
+                                <legend class="col-form-label fw-semibold pt-0">Kelengkapan Tambahan (Opsional)</legend>
+                                <div class="d-flex flex-wrap gap-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="ekstra" id="ekstraSambal"
+                                            value="Saus Sambal Ekstra">
+                                        <label class="form-check-label" for="ekstraSambal">Saus Sambal / Cabai
+                                            Rawit</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="ekstra" id="ekstraStiker"
+                                            value="Kartu Ucapan Acara">
+                                        <label class="form-check-label" for="ekstraStiker">Stiker / Kartu Ucapan
+                                            Acara</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <div class="mb-3">
+                                <label for="alamatKirim" class="form-label fw-semibold">Alamat Lengkap / Titik
+                                    Antar</label>
+                                <textarea class="form-control chika-input" id="alamatKirim" name="alamat" rows="2"
+                                    autocomplete="street-address" aria-describedby="bantuanAlamat"
+                                    placeholder="Isi alamat lengkap jika menggunakan kurir instan..."></textarea>
+                                <div id="bantuanAlamat" class="form-text chika-muted">Kosongkan jika ambil sendiri di
+                                    dapur.</div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="catatanOrder" class="form-label fw-semibold">Catatan Tambahan</label>
+                                <textarea class="form-control chika-input" id="catatanOrder" name="catatan" rows="2"
+                                    placeholder="Contoh: Request komposisi isi snack box atau jam pengambilan..."></textarea>
+                            </div>
+
+                            <div class="d-flex flex-wrap gap-2">
+                                <button type="submit" class="btn-chika-primary">Kirim Pesanan</button>
+                                <button type="reset" class="btn-chika-outline">Reset Form</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+
+                <aside class="col-lg-5" aria-labelledby="judul-info-order">
+                    <div class="chika-card p-4 mb-4">
+                        <h2 id="judul-info-order" class="h5 mb-3">Ketentuan Pemesanan</h2>
+                        <ul class="ps-3 mb-0 d-grid gap-2">
+                            <li><strong>Pesanan Harian:</strong> Pemesanan disarankan minimal H-1 agar bahan disiapkan
+                                segar oleh Ibu.</li>
+                            <li><strong>Pesanan Acara Besar:</strong> Untuk arisan, rapat, atau acara kampus, harap
+                                pesan minimal <strong>1 minggu sebelumnya</strong>.</li>
+                            <li><strong>Konfirmasi Pembayaran:</strong> Admin Pemesanan akan menghubungi nomor WhatsApp
+                                Anda untuk rincian total harga dan metode pembayaran.</li>
+                        </ul>
+                    </div>
+
+                    <div class="chika-card p-4">
+                        <h3 class="h5 mb-2">Ingin Pesan Instan?</h3>
+                        <p class="chika-muted mb-3">
+                            Menu harian Cemal-Cemil-Chika juga tersedia di gerai online <strong>ShopeeFood</strong>
+                            untuk pengiriman langsung hari ini.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="menu.html" class="btn-chika-primary">Lihat Daftar Menu</a>
+                            <a href="contact.html" class="btn-chika-outline">Tanya Admin</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="chika-footer py-4 text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Cemal-Cemil-Chika. Dibuat oleh Kelompok Kelas V TI ITATS.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
