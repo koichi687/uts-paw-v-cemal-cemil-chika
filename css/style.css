@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap');
 
 :root {
+    color-scheme: light dark;
     --bg-page: #FFF8FC;
     --surface: #FFFFFF;
     --primary: #9B729E;
@@ -9,6 +10,10 @@
     --primary-soft: #F3E5F2;
     --accent: #E09132;
     --accent-hover: #C87A1E;
+    --accent-soft: #FEF3E2;
+    --hero-glow-1: rgba(243, 229, 242, 0.7);
+    --hero-glow-2: rgba(254, 243, 226, 0.6);
+    --cta-bg: linear-gradient(135deg, #5A2D53 0%, #3F1D39 100%);
     --text-main: #4A3531;
     --text-muted: #7D6460;
     --border-soft: #EEDCEB;
@@ -228,7 +233,7 @@ header {
 }
 
 .badge-accent {
-    background-color: #FEF3E2;
+    background-color: var(--accent-soft);
     color: var(--accent-hover);
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
@@ -243,8 +248,8 @@ header {
 /* === 6. HERO SECTION (D3: Fluid clamp) === */
 .hero-section {
     padding: 3.5rem 0 4.5rem;
-    background: radial-gradient(circle at 85% 20%, rgba(243, 229, 242, 0.7) 0%, transparent 60%),
-        radial-gradient(circle at 15% 85%, rgba(254, 243, 226, 0.6) 0%, transparent 50%),
+    background: radial-gradient(circle at 85% 20%, var(--hero-glow-1) 0%, transparent 60%),
+        radial-gradient(circle at 15% 85%, var(--hero-glow-2) 0%, transparent 50%),
         var(--bg-page);
     position: relative;
     overflow: hidden;
@@ -306,7 +311,7 @@ header {
     width: 44px;
     height: 44px;
     border-radius: 12px;
-    background: #FEF3E2;
+    background: var(--accent-soft);
     color: var(--accent);
     display: flex;
     align-items: center;
@@ -500,7 +505,7 @@ header {
 
 /* === 11. CTA BOX & BANNER === */
 .cta-box {
-    background: linear-gradient(135deg, var(--primary-dark) 0%, #3F1D39 100%);
+    background: var(--cta-bg);
     color: #FFFFFF;
     border-radius: calc(var(--radius) * 1.5);
     padding: 3.5rem 2rem;
@@ -622,6 +627,10 @@ header {
         --primary-soft: #3D2638;
         --accent: #F5A642;
         --accent-hover: #FFB75E;
+        --accent-soft: #3B2816;
+        --hero-glow-1: rgba(200, 159, 203, 0.12);
+        --hero-glow-2: rgba(245, 166, 66, 0.08);
+        --cta-bg: linear-gradient(135deg, #3D2138 0%, #261323 100%);
         --text-main: #F7EEF5;
         --text-muted: #D1BACD;
         --border-soft: #442F40;
@@ -640,26 +649,42 @@ header {
         --bs-border-color: #442F40;
         --bs-card-bg: #281D26;
     }
+
+    /* Perbaikan kontras teks pada nav aktif & header tabel */
+    .chika-navbar .nav-link.active,
+    .table-chika thead th {
+        color: var(--bg-page);
+    }
+
+    /* Ikon menu hamburger Bootstrap di layar HP agar terlihat di navbar gelap */
+    .chika-navbar .navbar-toggler-icon {
+        filter: invert(1);
+    }
+
     /* Perbaikan tombol primer agar teksnya gelap kontras di mode gelap */
     .btn-chika-primary {
         background-color: var(--primary-dark);
         border-color: var(--primary-dark);
         color: var(--bg-page);
     }
+
     .btn-chika-primary:hover,
     .btn-chika-primary:focus-visible {
         background-color: var(--primary);
         border-color: var(--primary);
         color: var(--bg-page);
     }
+
     /* Tombol aksen (oranye emas) juga memakai teks gelap agar kontras */
     .btn-chika-accent {
         color: var(--bg-page);
     }
+
     .btn-chika-accent:hover,
     .btn-chika-accent:focus-visible {
         color: var(--bg-page);
     }
+
     /* Penyesuaian form input agar nyaman diketik di mode gelap */
     .form-control,
     .form-select,
@@ -668,6 +693,7 @@ header {
         color: var(--text-main);
         border-color: var(--border-soft);
     }
+
     .form-control:focus,
     .form-select:focus,
     .chika-input:focus {
