@@ -3,27 +3,20 @@
 
 :root {
     --bg-page: #FFF8FC;
-    /* Pink-putih lembut dari latar logo */
     --surface: #FFFFFF;
-    /* Putih bersih untuk card/konten */
     --primary: #9B729E;
-    /* Dusty mauve dari pita logo */
     --primary-dark: #5A2D53;
-    /* Deep plum dari teks pita */
     --primary-soft: #F3E5F2;
-    /* Lavender pastel untuk highlight */
     --accent: #E09132;
-    /* Emas karamel dari wajan & spatula */
     --accent-hover: #C87A1E;
     --text-main: #4A3531;
-    /* Cokelat hangat dari outline logo */
     --text-muted: #7D6460;
     --border-soft: #EEDCEB;
     --shadow-soft: 0 8px 24px rgba(90, 45, 83, 0.08);
     --radius: 16px;
 }
 
-/* === 2. RESET & BASE === */
+/* === 2. RESET & BASE (C4) === */
 *,
 *::before,
 *::after {
@@ -46,12 +39,7 @@ body {
     flex-direction: column;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Fredoka', sans-serif;
     color: var(--primary-dark);
     line-height: 1.3;
@@ -63,7 +51,7 @@ img {
     display: block;
 }
 
-/* === 3. SKIP LINK (AKSESIBILITAS) === */
+/* === 3. SKIP LINK (B5) === */
 a[href="#konten-utama"] {
     position: absolute;
     top: -100px;
@@ -82,7 +70,13 @@ a[href="#konten-utama"]:focus {
     top: 16px;
 }
 
-/* === 4. NAVBAR CHIKA === */
+/* === 4. NAVBAR CHIKA (C5, C7) === */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
 .chika-navbar {
     background-color: var(--surface);
     border-bottom: 2px solid var(--border-soft);
@@ -114,7 +108,7 @@ a[href="#konten-utama"]:focus {
 .chika-navbar .nav-link {
     font-weight: 600;
     color: var(--text-main);
-    padding: 0.5rem 1rem !important;
+    padding: 0.5rem 1rem;
     border-radius: 999px;
     transition: all 0.2s ease;
 }
@@ -126,10 +120,10 @@ a[href="#konten-utama"]:focus {
 
 .chika-navbar .nav-link.active {
     background-color: var(--primary);
-    color: #FFFFFF !important;
+    color: #FFFFFF;
 }
 
-/* === 5. BUTTONS & BADGES === */
+/* === 5. BUTTONS & BADGES (E2) === */
 .btn-chika-primary {
     background-color: var(--primary-dark);
     color: #FFFFFF;
@@ -143,7 +137,6 @@ a[href="#konten-utama"]:focus {
     align-items: center;
     gap: 0.5rem;
     transition: all 0.25s ease;
-    box-shadow: 0 4px 12px rgba(90, 45, 83, 0.2);
 }
 
 .btn-chika-primary:hover,
@@ -152,7 +145,6 @@ a[href="#konten-utama"]:focus {
     border-color: var(--primary);
     color: #FFFFFF;
     transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(90, 45, 83, 0.28);
 }
 
 .btn-chika-accent {
@@ -168,7 +160,6 @@ a[href="#konten-utama"]:focus {
     align-items: center;
     gap: 0.5rem;
     transition: all 0.25s ease;
-    box-shadow: 0 4px 12px rgba(224, 145, 50, 0.25);
 }
 
 .btn-chika-accent:hover,
@@ -177,7 +168,6 @@ a[href="#konten-utama"]:focus {
     border-color: var(--accent-hover);
     color: #FFFFFF;
     transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(224, 145, 50, 0.35);
 }
 
 .btn-chika-outline {
@@ -199,7 +189,6 @@ a[href="#konten-utama"]:focus {
 .btn-chika-outline:focus-visible {
     background-color: var(--primary-soft);
     color: var(--primary-dark);
-    border-color: var(--primary-dark);
     transform: translateY(-2px);
 }
 
@@ -216,7 +205,6 @@ a[href="#konten-utama"]:focus {
     align-items: center;
     gap: 0.5rem;
     transition: all 0.25s ease;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
 }
 
 .btn-chika-light:hover,
@@ -226,7 +214,7 @@ a[href="#konten-utama"]:focus {
     transform: translateY(-2px);
 }
 
-.badge-chika {
+.badge-chika, .chika-badge {
     background-color: var(--primary-soft);
     color: var(--primary-dark);
     font-family: 'Nunito', sans-serif;
@@ -252,7 +240,7 @@ a[href="#konten-utama"]:focus {
     gap: 0.4rem;
 }
 
-/* === 6. HERO SECTION === */
+/* === 6. HERO SECTION (D3: Fluid clamp) === */
 .hero-section {
     padding: 3.5rem 0 4.5rem;
     background: radial-gradient(circle at 85% 20%, rgba(243, 229, 242, 0.7) 0%, transparent 60%),
@@ -291,12 +279,6 @@ a[href="#konten-utama"]:focus {
     background: var(--surface);
     border: 2px solid var(--border-soft);
     box-shadow: var(--shadow-soft);
-    transform: rotate(-1deg);
-    transition: transform 0.3s ease;
-}
-
-.hero-image-card:hover {
-    transform: rotate(0deg) scale(1.01);
 }
 
 .hero-image-card img {
@@ -318,7 +300,6 @@ a[href="#konten-utama"]:focus {
     display: flex;
     align-items: center;
     gap: 0.85rem;
-    max-width: 280px;
 }
 
 .hero-floating-badge .badge-icon {
@@ -331,22 +312,9 @@ a[href="#konten-utama"]:focus {
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    flex-shrink: 0;
 }
 
-.hero-floating-badge strong {
-    font-family: 'Fredoka', sans-serif;
-    color: var(--primary-dark);
-    display: block;
-    font-size: 0.95rem;
-}
-
-.hero-floating-badge small {
-    color: var(--text-muted);
-    font-size: 0.8rem;
-}
-
-/* === 7. SECTION HEADINGS === */
+/* === 7. SECTION HEADINGS & PADDING === */
 .section-padding {
     padding: 4.5rem 0;
 }
@@ -376,57 +344,23 @@ a[href="#konten-utama"]:focus {
     margin: 0 auto 2.5rem;
 }
 
-/* === 8. KEUNGGULAN / FEATURE CARDS === */
-.feature-card {
+/* === 8. FEATURE & MENU CARDS (C5, C7: absolute card-tag) === */
+.feature-card, .chika-card {
     background: var(--surface);
     border: 2px solid var(--border-soft);
     border-radius: var(--radius);
-    padding: 2.2rem 1.6rem;
+    padding: 2rem 1.5rem;
     height: 100%;
     box-shadow: 0 4px 16px rgba(90, 45, 83, 0.04);
     transition: all 0.25s ease;
-    text-align: center;
 }
 
-.feature-card:hover {
-    transform: translateY(-6px);
+.feature-card:hover, .chika-card:hover {
+    transform: translateY(-4px);
     border-color: var(--primary);
     box-shadow: var(--shadow-soft);
 }
 
-.feature-icon-bubble {
-    width: 68px;
-    height: 68px;
-    border-radius: 50%;
-    background-color: var(--primary-soft);
-    color: var(--primary-dark);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.85rem;
-    margin-bottom: 1.25rem;
-    transition: all 0.25s ease;
-}
-
-.feature-card:hover .feature-icon-bubble {
-    background-color: var(--accent);
-    color: #FFFFFF;
-    transform: scale(1.1);
-}
-
-.feature-card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
-}
-
-.feature-card p {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-    margin-bottom: 0;
-    line-height: 1.65;
-}
-
-/* === 9. MENU HIGHLIGHT CARDS === */
 .menu-card {
     background: var(--surface);
     border: 2px solid var(--border-soft);
@@ -469,6 +403,7 @@ a[href="#konten-utama"]:focus {
     position: absolute;
     top: 14px;
     right: 14px;
+    z-index: 2;
 }
 
 .menu-card-body {
@@ -512,154 +447,58 @@ a[href="#konten-utama"]:focus {
     font-family: 'Nunito', sans-serif;
     font-size: 0.8rem;
     color: var(--text-muted);
-    font-weight: normal;
 }
 
-.btn-card-order {
-    font-size: 0.85rem;
-    padding: 0.45rem 1rem;
-}
-
-/* === 10. SNACK BOX & CATERING BANNER === */
-.catering-banner {
-    background: linear-gradient(135deg, var(--primary-soft) 0%, #FFFFFF 100%);
-    border: 2px solid var(--border-soft);
-    border-radius: calc(var(--radius) * 1.5);
-    padding: 3rem 2.5rem;
-    box-shadow: var(--shadow-soft);
-    position: relative;
-    overflow: hidden;
-}
-
-.step-box {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.1rem;
-    margin-bottom: 1.25rem;
-}
-
-.step-num {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    background: var(--primary-dark);
-    color: #FFFFFF;
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    font-size: 1rem;
-}
-
-.step-content h4 {
-    font-size: 1.1rem;
-    margin-bottom: 0.25rem;
-    color: var(--primary-dark);
-}
-
-.step-content p {
-    font-size: 0.92rem;
-    color: var(--text-muted);
-    margin: 0;
-}
-
-/* === 11. STORY TEASER CARD === */
-.story-card {
-    background: var(--surface);
-    border: 2px solid var(--border-soft);
-    border-radius: var(--radius);
-    padding: 2.5rem;
-    box-shadow: 0 4px 16px rgba(90, 45, 83, 0.05);
-}
-
-.story-img-container {
+/* === 9. FORM INPUT & VALIDASI (B3: :user-invalid) === */
+.chika-input {
+    border: 1.5px solid var(--border-soft);
     border-radius: 12px;
-    overflow: hidden;
-    border: 2px solid var(--border-soft);
-}
-
-.story-img-container img {
-    width: 100%;
-    height: 100%;
-    min-height: 280px;
-    object-fit: cover;
-    transition: transform 0.4s ease;
-}
-
-.story-img-container:hover img {
-    transform: scale(1.04);
-}
-
-/* === 12. TESTIMONIAL CARDS === */
-.testimonial-card {
-    background: var(--surface);
-    border: 2px solid var(--border-soft);
-    border-radius: var(--radius);
-    padding: 1.75rem;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 4px 12px rgba(90, 45, 83, 0.04);
-    transition: all 0.25s ease;
-}
-
-.testimonial-card:hover {
-    border-color: var(--primary);
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-soft);
-}
-
-.testimonial-stars {
-    color: #F5A623;
-    margin-bottom: 0.75rem;
-    font-size: 1.05rem;
-}
-
-.testimonial-text {
-    font-style: italic;
+    padding: 0.65rem 0.95rem;
     color: var(--text-main);
-    font-size: 0.95rem;
-    line-height: 1.65;
-    margin-bottom: 1.25rem;
+    background-color: var(--surface);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.testimonial-author {
-    display: flex;
-    align-items: center;
-    gap: 0.85rem;
+.chika-input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(155, 114, 158, 0.2);
 }
 
-.author-avatar {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+.chika-input:user-invalid,
+.chika-input:invalid:not(:placeholder-shown) {
+    border-color: #DC3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.2);
+}
+
+.chika-icon-box {
+    width: 48px;
+    height: 48px;
     background-color: var(--primary-soft);
     color: var(--primary-dark);
-    display: flex;
+    border-radius: 12px;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.35rem;
     font-weight: 700;
-    font-family: 'Fredoka', sans-serif;
-    font-size: 1.1rem;
-    border: 2px solid var(--border-soft);
 }
 
-.author-info h4 {
-    font-size: 0.98rem;
-    margin-bottom: 0.1rem;
-    font-family: 'Fredoka', sans-serif;
-    color: var(--primary-dark);
+/* === 10. GRID SENDIRI (C6: grid-template-areas) === */
+.chika-grid-areas {
+    display: grid;
+    grid-template-areas: "info form";
+    grid-template-columns: 1fr 1.5fr;
+    gap: 1.5rem;
 }
 
-.author-info span {
-    font-size: 0.82rem;
-    color: var(--text-muted);
+@media (max-width: 768px) {
+    .chika-grid-areas {
+        grid-template-areas: "form" "info";
+        grid-template-columns: 1fr;
+    }
 }
 
-/* === 13. CTA SECTION === */
+/* === 11. CTA BOX & BANNER === */
 .cta-box {
     background: linear-gradient(135deg, var(--primary-dark) 0%, #3F1D39 100%);
     color: #FFFFFF;
@@ -667,8 +506,6 @@ a[href="#konten-utama"]:focus {
     padding: 3.5rem 2rem;
     text-align: center;
     box-shadow: 0 12px 32px rgba(90, 45, 83, 0.25);
-    position: relative;
-    overflow: hidden;
 }
 
 .cta-box h2 {
@@ -684,84 +521,7 @@ a[href="#konten-utama"]:focus {
     margin: 0 auto 2rem;
 }
 
-/* === 14. FOOTER === */
-footer {
-    margin-top: auto;
-}
-
-footer:not(.chika-footer) {
-    background-color: var(--surface);
-    border-top: 1px solid var(--border-soft);
-    padding: 1.5rem 0;
-    text-align: center;
-    color: var(--text-muted);
-    font-size: 0.9rem;
-}
-
-.chika-footer {
-    background-color: #382133;
-    color: #E6D8E4;
-    padding-top: 3.8rem;
-    margin-top: auto;
-    border-top: 4px solid var(--accent);
-}
-
-.chika-footer h3 {
-    font-family: 'Fredoka', sans-serif;
-    font-size: 1.25rem;
-    color: #FFFFFF;
-    margin-bottom: 1.25rem;
-}
-
-.chika-footer p {
-    color: #D3C0D0;
-    font-size: 0.95rem;
-    line-height: 1.7;
-}
-
-.chika-footer .footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.chika-footer .footer-links li {
-    margin-bottom: 0.65rem;
-}
-
-.chika-footer .footer-links a {
-    color: #D3C0D0;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.chika-footer .footer-links a:hover {
-    color: var(--accent);
-    transform: translateX(4px);
-}
-
-.footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 1.5rem 0;
-    margin-top: 2.8rem;
-    text-align: center;
-    font-size: 0.88rem;
-    color: #B59FB2;
-}
-
-/* === 16. PAGE HERO & TABEL KATALOG MENU === */
-.page-hero {
-    background: radial-gradient(circle at 90% 10%, rgba(243, 229, 242, 0.7) 0%, transparent 60%),
-        radial-gradient(circle at 10% 90%, rgba(254, 243, 226, 0.6) 0%, transparent 50%),
-        var(--bg-page);
-    padding: 3rem 0 2.5rem;
-    border-bottom: 2px solid var(--border-soft);
-    text-align: center;
-}
-
+/* === 12. TABEL MENU (A6) === */
 .table-chika-wrapper {
     background: var(--surface);
     border: 2px solid var(--border-soft);
@@ -780,17 +540,14 @@ footer:not(.chika-footer) {
     color: #FFFFFF;
     font-family: 'Fredoka', sans-serif;
     font-weight: 600;
-    font-size: 1rem;
     padding: 1rem 1.25rem;
-    border-bottom: none;
-    letter-spacing: 0.3px;
 }
 
 .table-chika tbody td {
     padding: 1rem 1.25rem;
     vertical-align: middle;
-    color: var(--text-main);
     border-bottom: 1px solid var(--border-soft);
+    color: var(--text-main);
 }
 
 .table-chika tbody tr:hover {
@@ -801,85 +558,130 @@ footer:not(.chika-footer) {
     font-family: 'Fredoka', sans-serif;
     font-weight: 700;
     color: var(--accent);
-    font-size: 1.05rem;
 }
 
-/* === 15. ACCESSIBILITY & RESPONSIVE TWEAKS === */
+/* === 13. FOOTER BERSAMA === */
+.chika-footer {
+    background-color: #382133;
+    color: #E6D8E4;
+    padding-top: 3.8rem;
+    margin-top: auto;
+    border-top: 4px solid var(--accent);
+}
+
+.chika-footer h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    margin-bottom: 1.25rem;
+}
+
+.chika-footer p {
+    color: #D3C0D0;
+    font-size: 0.95rem;
+}
+
+.chika-footer .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chika-footer .footer-links a {
+    color: #D3C0D0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.chika-footer .footer-links a:hover {
+    color: var(--accent);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem 0;
+    margin-top: 2.8rem;
+    text-align: center;
+    font-size: 0.88rem;
+    color: #B59FB2;
+}
+
+/* === 14. AKSESIBILITAS FOKUS KEYBOARD (B6) === */
 :focus-visible {
     outline: 3px solid var(--accent);
     outline-offset: 2px;
 }
 
-@media (max-width: 991.98px) {
-    .hero-section {
-        padding: 2.5rem 0 3.5rem;
-        text-align: center;
+/* === 15. MODE GELAP OTOMATIS (D5) === */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-page: #1A1319;
+        --surface: #281D26;
+        --primary: #C89FCB;
+        --primary-dark: #F5E8F4;
+        --primary-soft: #3D2638;
+        --accent: #F5A642;
+        --accent-hover: #FFB75E;
+        --text-main: #F7EEF5;
+        --text-muted: #D1BACD;
+        --border-soft: #442F40;
+        --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.45);
+        --bs-light-rgb: 40, 29, 38;
+        --bs-table-color: #F7EEF5;
+        --bs-table-bg: #281D26;
+        --bs-table-hover-bg: #382133;
+        --bs-table-hover-color: #F7EEF5;
+        /* Integrasikan variabel Bootstrap agar bg-white ikut adaptif gelap */
+        --bs-white-rgb: 40, 29, 38;
+        --bs-body-bg: #1A1319;
+        --bs-body-color: #F7EEF5;
+        --bs-body-color-rgb: 247, 238, 245;
+        --bs-secondary-color: #D1BACD;
+        --bs-border-color: #442F40;
+        --bs-card-bg: #281D26;
     }
-
-    .hero-lead {
-        margin-left: auto;
-        margin-right: auto;
+    /* Perbaikan tombol primer agar teksnya gelap kontras di mode gelap */
+    .btn-chika-primary {
+        background-color: var(--primary-dark);
+        border-color: var(--primary-dark);
+        color: var(--bg-page);
     }
-
-    .hero-cta-group {
-        justify-content: center;
+    .btn-chika-primary:hover,
+    .btn-chika-primary:focus-visible {
+        background-color: var(--primary);
+        border-color: var(--primary);
+        color: var(--bg-page);
     }
-
-    .hero-image-card {
-        margin-top: 2.5rem;
-        transform: none;
+    /* Tombol aksen (oranye emas) juga memakai teks gelap agar kontras */
+    .btn-chika-accent {
+        color: var(--bg-page);
     }
-
-    .hero-floating-badge {
-        bottom: 10px;
-        left: 10px;
+    .btn-chika-accent:hover,
+    .btn-chika-accent:focus-visible {
+        color: var(--bg-page);
     }
-
-    .catering-banner {
-        padding: 2.2rem 1.5rem;
+    /* Penyesuaian form input agar nyaman diketik di mode gelap */
+    .form-control,
+    .form-select,
+    .chika-input {
+        background-color: #211620;
+        color: var(--text-main);
+        border-color: var(--border-soft);
+    }
+    .form-control:focus,
+    .form-select:focus,
+    .chika-input:focus {
+        background-color: #281D26;
+        color: var(--text-main);
     }
 }
 
-/* === 17. TAMBAHAN UNTUK FORM PESAN, KONTAK & TERIMA KASIH === */
-.chika-badge {
-    display: inline-block;
-    background-color: var(--primary-soft);
-    color: var(--primary-dark);
-    font-weight: 700;
-    font-size: 0.875rem;
-    padding: 0.35rem 1rem;
-    border-radius: 999px;
-}
-
-.chika-card {
-    background-color: var(--surface);
-    border: 1px solid var(--border-soft);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow-soft);
-}
-
-.chika-input {
-    border: 1.5px solid var(--border-soft);
-    border-radius: 12px;
-    padding: 0.65rem 0.95rem;
-    color: var(--text-main);
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.chika-input:focus {
-    border-color: var(--primary);
-    box-shadow: 0 0 0 0.2rem rgba(155, 114, 158, 0.2);
-}
-
-.chika-icon-box {
-    width: 48px;
-    height: 48px;
-    background-color: var(--primary-soft);
-    color: var(--primary-dark);
-    border-radius: 12px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.35rem;
-    font-weight: 700;
+/* === 16. PREFERS REDUCED MOTION (D6) === */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms;
+        animation-iteration-count: 1;
+        transition-duration: 0.01ms;
+        scroll-behavior: auto;
+    }
 }
