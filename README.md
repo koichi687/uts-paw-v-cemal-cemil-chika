@@ -96,7 +96,9 @@ Seluruh warna dan variabel desain diatur terpusat di `:root` pada file `css/styl
 
 ### B. Hasil Audit & Aksesibilitas
 - **W3C Markup Validator:** 0 Error di seluruh 7 halaman HTML.
+![W3C](img/screenshots/W3C.png)
 - **Skor Lighthouse Accessibility:** ≥ 90 di seluruh halaman utama.
+![LightHouse](img/screenshots/LightHouse.png)
 - **Uji Navigasi Keyboard:** Situs dapat dijelajahi penuh hanya dengan tombol `Tab`, `Enter`, dan `Space`, didukung skip link *"Lewati ke konten utama"* serta indikator fokus keyboard (`:focus-visible`).
 
 ---
@@ -104,4 +106,4 @@ Seluruh warna dan variabel desain diatur terpusat di `:root` pada file `css/styl
 ## 7. Sumber Aset & Pernyataan Penggunaan AI
 - **Sumber Gambar:** Seluruh dokumentasi makanan dan dapur adalah **foto asli** dari usaha kuliner Cemal-Cemil-Chika (dokumen pribadi UMKM dengan izin pemilik).
 - **Sumber Ikon:** Menggunakan *Bootstrap Icons v1.11.3* (lisensi MIT).
-- **Penggunaan AI:** Menggunakan bantuan asisten AI (Antigravity / Gemini) sebagai rekan diskusi teknis untuk meninjau kepatuhan spesifikasi teknis tugas UTS, menyusun kerangka semantik HTML5, memverifikasi aksesibilitas (ARIA/WCAG).
+- **Penggunaan AI:** Menggunakan bantuan asisten AI (Antigravity / Gemini) sebagai rekan diskusi teknis untuk meninjau kepatuhan spesifikasi teknis tugas UTS, menyusun kerangka semantik HTML5, memverifikasi aksesibilitas.
