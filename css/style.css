@@ -1,27 +1,37 @@
-/* === 1. FONT & PALET WARNA LOGO CEMAL-CEMIL CHIKA === */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap');
+/* ==========================================================================
+   MODEL 1: WARM ARTISAN BAKERY (LIGHT & DARK MODE)
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 :root {
     color-scheme: light dark;
-    --bg-page: #FFF8FC;
-    --surface: #FFFFFF;
-    --primary: #9B729E;
-    --primary-dark: #5A2D53;
-    --primary-soft: #F3E5F2;
-    --accent: #E09132;
-    --accent-hover: #C87A1E;
-    --accent-soft: #FEF3E2;
-    --hero-glow-1: rgba(243, 229, 242, 0.7);
-    --hero-glow-2: rgba(254, 243, 226, 0.6);
-    --cta-bg: linear-gradient(135deg, #5A2D53 0%, #3F1D39 100%);
-    --text-main: #4A3531;
-    --text-muted: #7D6460;
-    --border-soft: #EEDCEB;
-    --shadow-soft: 0 8px 24px rgba(90, 45, 83, 0.08);
-    --radius: 16px;
+    /* Palet Light Mode: Krem Gading, Espresso & Terakota */
+    --bg-page: #F7F3EC;
+    --surface: #FFFDF9;
+    --surface-alt: #EFE9DF;
+    --primary: #9E472A;
+    --primary-dark: #7A331C;
+    --primary-soft: #F5E5DF;
+    --accent: #261E1B;
+    --accent-hover: #3D312C;
+    --accent-soft: #EAE3DC;
+    --cta-bg: #261E1B;
+    --text-main: #261E1B;
+    --text-muted: #665852;
+    --border-soft: #E3DBD0;
+    --shadow-soft: 0 10px 28px rgba(38, 30, 27, 0.06);
+    --radius: 10px;
+    --btn-radius: 8px;
+
+    /* Token Bootstrap Light Mode (E3) */
+    --bs-body-font-family: 'Plus Jakarta Sans', sans-serif;
+    --bs-body-bg: var(--bg-page);
+    --bs-body-color: var(--text-main);
+    --bs-primary: #9E472A;
+    --bs-border-color: var(--border-soft);
 }
 
-/* === 2. RESET & BASE (C4) === */
+/* === RESET & TIPOGRAFI EDITORIAL (C4) === */
 *,
 *::before,
 *::after {
@@ -35,7 +45,7 @@ html {
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: var(--bg-page);
     color: var(--text-main);
     line-height: 1.7;
@@ -44,10 +54,11 @@ body {
     flex-direction: column;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Fredoka', sans-serif;
-    color: var(--primary-dark);
-    line-height: 1.3;
+h1, h2, h3, h4, h5, h6, .font-fredoka {
+    font-family: 'Fraunces', Georgia, serif;
+    color: var(--text-main);
+    line-height: 1.25;
+    letter-spacing: -0.01em;
 }
 
 img {
@@ -56,15 +67,24 @@ img {
     display: block;
 }
 
-/* === 3. SKIP LINK (B5) === */
+.chika-muted {
+    color: var(--text-muted);
+}
+
+.chika-accent-text {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* === SKIP LINK (B5) === */
 a[href="#konten-utama"] {
     position: absolute;
     top: -100px;
     left: 16px;
-    background: var(--primary-dark);
+    background: var(--primary);
     color: #FFFFFF;
     padding: 8px 16px;
-    border-radius: 8px;
+    border-radius: var(--btn-radius);
     text-decoration: none;
     font-weight: 700;
     z-index: 1050;
@@ -75,7 +95,7 @@ a[href="#konten-utama"]:focus {
     top: 16px;
 }
 
-/* === 4. NAVBAR CHIKA (C5, C7) === */
+/* === NAVBAR EDITORIAL === */
 header {
     position: sticky;
     top: 0;
@@ -84,43 +104,44 @@ header {
 
 .chika-navbar {
     background-color: var(--surface);
-    border-bottom: 2px solid var(--border-soft);
-    box-shadow: 0 4px 16px rgba(90, 45, 83, 0.06);
-    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-soft);
+    padding: 0.9rem 0;
 }
 
 .chika-navbar .navbar-brand {
-    font-family: 'Fredoka', sans-serif;
-    font-size: 1.4rem;
-    color: var(--primary-dark);
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 700;
+    font-size: 1.35rem;
+    color: var(--text-main);
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.6rem;
 }
 
 .chika-navbar .brand-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 10px;
+    width: 34px;
+    height: 34px;
+    border-radius: var(--btn-radius);
     background: var(--primary-soft);
-    color: var(--primary-dark);
-    font-size: 1.25rem;
+    color: var(--primary);
+    font-size: 1.15rem;
 }
 
 .chika-navbar .nav-link {
     font-weight: 600;
-    color: var(--text-main);
-    padding: 0.5rem 1rem;
-    border-radius: 999px;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    padding: 0.45rem 0.95rem;
+    border-radius: var(--btn-radius);
     transition: all 0.2s ease;
 }
 
 .chika-navbar .nav-link:hover {
-    background-color: var(--primary-soft);
-    color: var(--primary-dark);
+    color: var(--text-main);
+    background-color: var(--surface-alt);
 }
 
 .chika-navbar .nav-link.active {
@@ -128,26 +149,27 @@ header {
     color: #FFFFFF;
 }
 
-/* === 5. BUTTONS & BADGES (E2) === */
+/* === TOMBOL & BADGE ARTISAN (E2) === */
 .btn-chika-primary {
-    background-color: var(--primary-dark);
+    background-color: var(--primary);
     color: #FFFFFF;
-    font-family: 'Fredoka', sans-serif;
     font-weight: 600;
-    padding: 0.75rem 1.6rem;
-    border-radius: 999px;
-    border: 2px solid var(--primary-dark);
+    font-size: 0.95rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--btn-radius);
+    border: 1.5px solid var(--primary);
     text-decoration: none;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
-    transition: all 0.25s ease;
+    transition: all 0.2s ease;
 }
 
 .btn-chika-primary:hover,
 .btn-chika-primary:focus-visible {
-    background-color: var(--primary);
-    border-color: var(--primary);
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
     color: #FFFFFF;
     transform: translateY(-2px);
 }
@@ -155,16 +177,17 @@ header {
 .btn-chika-accent {
     background-color: var(--accent);
     color: #FFFFFF;
-    font-family: 'Fredoka', sans-serif;
     font-weight: 600;
-    padding: 0.75rem 1.6rem;
-    border-radius: 999px;
-    border: 2px solid var(--accent);
+    font-size: 0.95rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--btn-radius);
+    border: 1.5px solid var(--accent);
     text-decoration: none;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
-    transition: all 0.25s ease;
+    transition: all 0.2s ease;
 }
 
 .btn-chika-accent:hover,
@@ -177,186 +200,200 @@ header {
 
 .btn-chika-outline {
     background-color: transparent;
-    color: var(--primary-dark);
-    font-family: 'Fredoka', sans-serif;
+    color: var(--text-main);
     font-weight: 600;
-    padding: 0.75rem 1.6rem;
-    border-radius: 999px;
-    border: 2px solid var(--primary);
+    font-size: 0.95rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--btn-radius);
+    border: 1.5px solid var(--border-soft);
     text-decoration: none;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
-    transition: all 0.25s ease;
+    transition: all 0.2s ease;
 }
 
 .btn-chika-outline:hover,
 .btn-chika-outline:focus-visible {
-    background-color: var(--primary-soft);
-    color: var(--primary-dark);
+    background-color: var(--surface-alt);
+    border-color: var(--text-main);
+    color: var(--text-main);
     transform: translateY(-2px);
 }
 
 .btn-chika-light {
-    background-color: var(--surface);
-    color: var(--primary-dark);
-    font-family: 'Fredoka', sans-serif;
+    background-color: #FFFDF9;
+    color: #261E1B;
     font-weight: 600;
-    padding: 0.75rem 1.6rem;
-    border-radius: 999px;
-    border: 2px solid #FFFFFF;
+    font-size: 0.95rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--btn-radius);
+    border: 1.5px solid #FFFDF9;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
-    transition: all 0.25s ease;
+    transition: all 0.2s ease;
 }
 
 .btn-chika-light:hover,
 .btn-chika-light:focus-visible {
-    background-color: var(--primary-soft);
-    color: var(--primary-dark);
+    background-color: #F5E5DF;
+    color: #7A331C;
     transform: translateY(-2px);
 }
 
 .badge-chika, .chika-badge {
-    background-color: var(--primary-soft);
-    color: var(--primary-dark);
-    font-family: 'Nunito', sans-serif;
+    background-color: var(--surface-alt);
+    color: var(--text-main);
     font-weight: 700;
-    padding: 0.4rem 0.9rem;
-    border-radius: 999px;
-    font-size: 0.85rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    letter-spacing: 0.03em;
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
 }
 
 .badge-accent {
-    background-color: var(--accent-soft);
-    color: var(--accent-hover);
-    font-family: 'Nunito', sans-serif;
+    background-color: var(--primary-soft);
+    color: var(--primary-dark);
     font-weight: 700;
-    padding: 0.4rem 0.9rem;
-    border-radius: 999px;
-    font-size: 0.85rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    letter-spacing: 0.03em;
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
 }
 
-/* === 6. HERO SECTION (D3: Fluid clamp) === */
+/* === HERO & PAGE HERO (D3) === */
 .hero-section {
-    padding: 3.5rem 0 4.5rem;
-    background: radial-gradient(circle at 85% 20%, var(--hero-glow-1) 0%, transparent 60%),
-        radial-gradient(circle at 15% 85%, var(--hero-glow-2) 0%, transparent 50%),
-        var(--bg-page);
-    position: relative;
-    overflow: hidden;
+    padding: 4rem 0 4.5rem;
+    background-color: var(--bg-page);
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.page-hero {
+    padding: 3.5rem 0 2.75rem;
+    background-color: var(--surface-alt);
+    border-bottom: 1px solid var(--border-soft);
 }
 
 .hero-title {
-    font-size: clamp(2.1rem, 3.8vw + 1rem, 3.3rem);
+    font-size: clamp(2.15rem, 3.8vw + 1rem, 3.35rem);
     font-weight: 700;
-    color: var(--primary-dark);
+    color: var(--text-main);
     margin-bottom: 1.25rem;
-    line-height: 1.25;
+    line-height: 1.18;
 }
 
 .hero-title .text-highlight {
-    color: var(--accent);
-    position: relative;
-    display: inline-block;
+    color: var(--primary);
+    font-style: italic;
 }
 
 .hero-lead {
-    font-size: 1.15rem;
+    font-size: 1.08rem;
     color: var(--text-muted);
     margin-bottom: 2rem;
-    max-width: 540px;
-    line-height: 1.7;
+    max-width: 520px;
 }
 
 .hero-image-card {
     position: relative;
     border-radius: var(--radius);
-    padding: 12px;
+    padding: 10px;
     background: var(--surface);
-    border: 2px solid var(--border-soft);
+    border: 1px solid var(--border-soft);
     box-shadow: var(--shadow-soft);
 }
 
 .hero-image-card img {
-    border-radius: 12px;
+    border-radius: 6px;
     width: 100%;
-    height: 380px;
+    height: 260px;
     object-fit: cover;
 }
 
 .hero-floating-badge {
-    position: absolute;
-    bottom: -15px;
-    left: -15px;
+    position: static;
+    margin-top: 1rem;
     background: var(--surface);
-    border: 2px solid var(--border-soft);
-    padding: 0.85rem 1.25rem;
+    border: 1px solid var(--border-soft);
+    padding: 0.85rem 1.15rem;
     border-radius: var(--radius);
-    box-shadow: 0 10px 24px rgba(90, 45, 83, 0.12);
+    box-shadow: var(--shadow-soft);
     display: flex;
     align-items: center;
     gap: 0.85rem;
 }
 
 .hero-floating-badge .badge-icon {
-    width: 44px;
-    height: 44px;
-    border-radius: 12px;
-    background: var(--accent-soft);
-    color: var(--accent);
+    width: 42px;
+    height: 42px;
+    border-radius: var(--btn-radius);
+    background: var(--primary-soft);
+    color: var(--primary);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
 }
 
-/* === 7. SECTION HEADINGS & PADDING === */
+/* === SECTION HEADINGS (C8) === */
 .section-padding {
     padding: 4.5rem 0;
 }
 
 .section-tag {
-    font-family: 'Fredoka', sans-serif;
     text-transform: uppercase;
-    font-size: 0.85rem;
-    letter-spacing: 1.5px;
-    font-weight: 600;
-    color: var(--accent);
+    font-size: 0.78rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: var(--primary);
     margin-bottom: 0.5rem;
     display: block;
 }
 
 .section-title {
-    font-size: clamp(1.8rem, 2.5vw + 1rem, 2.4rem);
+    font-size: clamp(1.8rem, 2.5vw + 1rem, 2.45rem);
     font-weight: 700;
-    color: var(--primary-dark);
+    color: var(--text-main);
     margin-bottom: 0.75rem;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: var(--primary);
+    margin: 0.65rem auto 0;
+}
+
+.col-lg-6 .section-title::after {
+    margin-left: 0;
 }
 
 .section-desc {
     color: var(--text-muted);
-    font-size: 1.05rem;
-    max-width: 620px;
+    font-size: 1.02rem;
+    max-width: 600px;
     margin: 0 auto 2.5rem;
 }
 
-/* === 8. FEATURE & MENU CARDS (C5, C7: absolute card-tag) === */
+/* === CARDS (FEATURE, MENU, TESTIMONIAL) === */
 .feature-card, .chika-card {
     background: var(--surface);
-    border: 2px solid var(--border-soft);
+    border: 1px solid var(--border-soft);
     border-radius: var(--radius);
     padding: 2rem 1.5rem;
     height: 100%;
-    box-shadow: 0 4px 16px rgba(90, 45, 83, 0.04);
     transition: all 0.25s ease;
 }
 
@@ -366,48 +403,157 @@ header {
     box-shadow: var(--shadow-soft);
 }
 
+.feature-icon-bubble {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--btn-radius);
+    background-color: var(--primary-soft);
+    color: var(--primary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    margin-bottom: 1rem;
+}
+
+.catering-banner {
+    background-color: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius);
+    padding: 2.5rem;
+    box-shadow: var(--shadow-soft);
+}
+
+.step-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.step-num {
+    width: 34px;
+    height: 34px;
+    border-radius: var(--btn-radius);
+    background-color: var(--primary);
+    color: #FFFFFF;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.step-content h4 {
+    font-size: 1.05rem;
+    margin-bottom: 0.2rem;
+}
+
+.step-content p {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    margin-bottom: 0;
+}
+
+.story-img-container img {
+    border-radius: var(--radius);
+    border: 1px solid var(--border-soft);
+}
+
+.testimonial-card {
+    background-color: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius);
+    padding: 1.75rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-stars {
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.testimonial-text {
+    color: var(--text-main);
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-soft);
+}
+
+.author-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--btn-radius);
+    background-color: var(--surface-alt);
+    color: var(--text-main);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.author-info h3,
+.author-info h4 {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.author-info span {
+    font-size: 0.84rem;
+    color: var(--text-muted);
+}
+
 .menu-card {
     background: var(--surface);
-    border: 2px solid var(--border-soft);
+    border: 1px solid var(--border-soft);
     border-radius: var(--radius);
     overflow: hidden;
     height: 100%;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 16px rgba(90, 45, 83, 0.04);
     transition: all 0.25s ease;
-    position: relative;
 }
 
 .menu-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-5px);
     border-color: var(--primary);
     box-shadow: var(--shadow-soft);
 }
 
 .menu-card-visual {
-    height: 200px;
+    height: 205px;
     position: relative;
     overflow: hidden;
-    background-color: var(--primary-soft);
+    background-color: var(--surface-alt);
 }
 
 .menu-card-visual .food-avatar {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
     transition: transform 0.35s ease;
 }
 
 .menu-card:hover .food-avatar {
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
 .menu-card-visual .card-tag {
     position: absolute;
-    top: 14px;
-    right: 14px;
+    top: 12px;
+    right: 12px;
     z-index: 2;
 }
 
@@ -419,9 +565,9 @@ header {
 }
 
 .menu-card-title {
-    font-size: 1.25rem;
-    color: var(--primary-dark);
-    margin-bottom: 0.5rem;
+    font-size: 1.22rem;
+    color: var(--text-main);
+    margin-bottom: 0.45rem;
 }
 
 .menu-card-desc {
@@ -437,27 +583,26 @@ header {
     align-items: center;
     justify-content: space-between;
     padding-top: 1rem;
-    border-top: 1px dashed var(--border-soft);
+    border-top: 1px solid var(--border-soft);
     margin-top: auto;
 }
 
 .menu-price {
-    font-family: 'Fredoka', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: 700;
-    color: var(--accent);
+    color: var(--text-main);
 }
 
 .menu-price span {
-    font-family: 'Nunito', sans-serif;
     font-size: 0.8rem;
+    font-weight: 400;
     color: var(--text-muted);
 }
 
-/* === 9. FORM INPUT & VALIDASI (B3: :user-invalid) === */
+/* === FORM & INPUT (B3) === */
 .chika-input {
-    border: 1.5px solid var(--border-soft);
-    border-radius: 12px;
+    border: 1px solid var(--border-soft);
+    border-radius: var(--btn-radius);
     padding: 0.65rem 0.95rem;
     color: var(--text-main);
     background-color: var(--surface);
@@ -466,73 +611,106 @@ header {
 
 .chika-input:focus {
     border-color: var(--primary);
-    box-shadow: 0 0 0 0.2rem rgba(155, 114, 158, 0.2);
+    box-shadow: 0 0 0 0.2rem rgba(158, 71, 42, 0.16);
 }
 
 .chika-input:user-invalid,
 .chika-input:invalid:not(:placeholder-shown) {
-    border-color: #DC3545;
-    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.2);
+    border-color: #C93B3B;
+    box-shadow: 0 0 0 0.2rem rgba(201, 59, 59, 0.16);
 }
 
 .chika-icon-box {
-    width: 48px;
-    height: 48px;
+    width: 46px;
+    height: 46px;
     background-color: var(--primary-soft);
-    color: var(--primary-dark);
-    border-radius: 12px;
+    color: var(--primary);
+    border-radius: var(--btn-radius);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.35rem;
-    font-weight: 700;
+    font-size: 1.3rem;
 }
 
-/* === 10. GRID SENDIRI (C6: grid-template-areas) === */
-.chika-grid-areas {
+/* === CSS GRID & MOBILE-FIRST BREAKPOINTS (C6, D1, D2) === */
+.chika-auto-grid {
     display: grid;
-    grid-template-areas: "info form";
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr;
     gap: 1.5rem;
 }
 
-@media (max-width: 768px) {
+.chika-grid-areas {
+    display: grid;
+    grid-template-areas:
+        "form"
+        "info";
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.grid-area-info {
+    grid-area: info;
+}
+
+.grid-area-form {
+    grid-area: form;
+}
+
+@media (min-width: 48em) {
+    .hero-image-card img {
+        height: 380px;
+    }
+
+    .hero-floating-badge {
+        position: absolute;
+        bottom: -14px;
+        left: -14px;
+        margin-top: 0;
+    }
+
+    .chika-auto-grid {
+        grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    }
+
     .chika-grid-areas {
-        grid-template-areas: "form" "info";
-        grid-template-columns: 1fr;
+        grid-template-areas: "info form";
+        grid-template-columns: 1fr 1.5fr;
     }
 }
 
-/* === 11. CTA BOX & BANNER === */
+@media (min-width: 64em) {
+    .chika-auto-grid {
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    }
+}
+
+/* === CTA BOX, TABEL & FOOTER === */
 .cta-box {
     background: var(--cta-bg);
-    color: #FFFFFF;
-    border-radius: calc(var(--radius) * 1.5);
+    color: #FFFDF9;
+    border-radius: var(--radius);
     padding: 3.5rem 2rem;
     text-align: center;
-    box-shadow: 0 12px 32px rgba(90, 45, 83, 0.25);
 }
 
 .cta-box h2 {
-    color: #FFFFFF;
-    font-size: clamp(1.8rem, 3vw + 1rem, 2.6rem);
+    color: #FFFDF9;
+    font-size: clamp(1.8rem, 3vw + 1rem, 2.5rem);
     margin-bottom: 1rem;
 }
 
 .cta-box p {
-    color: #F3E5F2;
-    font-size: 1.1rem;
-    max-width: 620px;
+    color: #D6CBC4;
+    font-size: 1.05rem;
+    max-width: 600px;
     margin: 0 auto 2rem;
 }
 
-/* === 12. TABEL MENU (A6) === */
 .table-chika-wrapper {
     background: var(--surface);
-    border: 2px solid var(--border-soft);
+    border: 1px solid var(--border-soft);
     border-radius: var(--radius);
     overflow: hidden;
-    box-shadow: 0 4px 16px rgba(90, 45, 83, 0.04);
 }
 
 .table-chika {
@@ -541,10 +719,10 @@ header {
 }
 
 .table-chika thead th {
-    background-color: var(--primary);
-    color: #FFFFFF;
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 600;
+    background-color: var(--surface-alt);
+    color: var(--text-main);
+    font-weight: 700;
+    border-bottom: 1px solid var(--border-soft);
     padding: 1rem 1.25rem;
 }
 
@@ -560,30 +738,27 @@ header {
 }
 
 .table-chika .price-col {
-    font-family: 'Fredoka', sans-serif;
     font-weight: 700;
-    color: var(--accent);
+    color: var(--primary);
 }
 
-/* === 13. FOOTER BERSAMA === */
 .chika-footer {
-    background-color: #382133;
-    color: #E6D8E4;
+    background-color: #211B18;
+    color: #D6CBC4;
     padding-top: 3.8rem;
     margin-top: auto;
-    border-top: 4px solid var(--accent);
+    border-top: 3px solid var(--primary);
 }
 
 .chika-footer h3 {
-    font-family: 'Fredoka', sans-serif;
-    font-size: 1.25rem;
-    color: #FFFFFF;
+    font-size: 1.2rem;
+    color: #FFFDF9;
     margin-bottom: 1.25rem;
 }
 
 .chika-footer p {
-    color: #D3C0D0;
-    font-size: 0.95rem;
+    color: #BFAEA6;
+    font-size: 0.94rem;
 }
 
 .chika-footer .footer-links {
@@ -593,116 +768,83 @@ header {
 }
 
 .chika-footer .footer-links a {
-    color: #D3C0D0;
+    color: #BFAEA6;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .chika-footer .footer-links a:hover {
-    color: var(--accent);
+    color: #FFFDF9;
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
     padding: 1.5rem 0;
     margin-top: 2.8rem;
     text-align: center;
     font-size: 0.88rem;
-    color: #B59FB2;
+    color: #9C8B83;
 }
 
-/* === 14. AKSESIBILITAS FOKUS KEYBOARD (B6) === */
 :focus-visible {
-    outline: 3px solid var(--accent);
+    outline: 3px solid var(--primary);
     outline-offset: 2px;
 }
 
-/* === 15. MODE GELAP OTOMATIS (D5) === */
+/* === DARK MODE MODEL 1: ROASTED ESPRESSO & WARM TERRACOTTA (D5) === */
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg-page: #1A1319;
-        --surface: #281D26;
-        --primary: #C89FCB;
-        --primary-dark: #F5E8F4;
-        --primary-soft: #3D2638;
-        --accent: #F5A642;
-        --accent-hover: #FFB75E;
-        --accent-soft: #3B2816;
-        --hero-glow-1: rgba(200, 159, 203, 0.12);
-        --hero-glow-2: rgba(245, 166, 66, 0.08);
-        --cta-bg: linear-gradient(135deg, #3D2138 0%, #261323 100%);
-        --text-main: #F7EEF5;
-        --text-muted: #D1BACD;
-        --border-soft: #442F40;
-        --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.45);
-        --bs-light-rgb: 40, 29, 38;
-        --bs-table-color: #F7EEF5;
-        --bs-table-bg: #281D26;
-        --bs-table-hover-bg: #382133;
-        --bs-table-hover-color: #F7EEF5;
-        /* Integrasikan variabel Bootstrap agar bg-white ikut adaptif gelap */
-        --bs-white-rgb: 40, 29, 38;
-        --bs-body-bg: #1A1319;
-        --bs-body-color: #F7EEF5;
-        --bs-body-color-rgb: 247, 238, 245;
-        --bs-secondary-color: #D1BACD;
-        --bs-border-color: #442F40;
-        --bs-card-bg: #281D26;
+        --bg-page: #161210;
+        --surface: #211B18;
+        --surface-alt: #2B2320;
+        --primary: #E08B6B;
+        --primary-dark: #F2A78B;
+        --primary-soft: #38241D;
+        --accent: #F4EDE6;
+        --accent-hover: #FFFFFF;
+        --accent-soft: #2E2622;
+        --cta-bg: #261F1C;
+        --text-main: #F4EDE6;
+        --text-muted: #BFAEA6;
+        --border-soft: #362D29;
+        --shadow-soft: 0 10px 28px rgba(0, 0, 0, 0.45);
+
+        --bs-white-rgb: 33, 27, 24;
+        --bs-light-rgb: 43, 35, 32;
+        --bs-body-bg: #161210;
+        --bs-body-color: #F4EDE6;
+        --bs-body-color-rgb: 244, 237, 230;
+        --bs-secondary-color: #BFAEA6;
+        --bs-border-color: #362D29;
+        --bs-card-bg: #211B18;
+        --bs-table-color: #F4EDE6;
+        --bs-table-bg: #211B18;
+        --bs-table-hover-bg: #2B2320;
+        --bs-table-hover-color: #F4EDE6;
     }
 
-    /* Perbaikan kontras teks pada nav aktif & header tabel */
     .chika-navbar .nav-link.active,
-    .table-chika thead th {
-        color: var(--bg-page);
+    .btn-chika-primary,
+    .btn-chika-primary:hover,
+    .btn-chika-accent,
+    .btn-chika-accent:hover,
+    .step-num {
+        color: #161210;
     }
 
-    /* Ikon menu hamburger Bootstrap di layar HP agar terlihat di navbar gelap */
     .chika-navbar .navbar-toggler-icon {
         filter: invert(1);
     }
 
-    /* Perbaikan tombol primer agar teksnya gelap kontras di mode gelap */
-    .btn-chika-primary {
-        background-color: var(--primary-dark);
-        border-color: var(--primary-dark);
-        color: var(--bg-page);
-    }
-
-    .btn-chika-primary:hover,
-    .btn-chika-primary:focus-visible {
-        background-color: var(--primary);
-        border-color: var(--primary);
-        color: var(--bg-page);
-    }
-
-    /* Tombol aksen (oranye emas) juga memakai teks gelap agar kontras */
-    .btn-chika-accent {
-        color: var(--bg-page);
-    }
-
-    .btn-chika-accent:hover,
-    .btn-chika-accent:focus-visible {
-        color: var(--bg-page);
-    }
-
-    /* Penyesuaian form input agar nyaman diketik di mode gelap */
     .form-control,
     .form-select,
     .chika-input {
-        background-color: #211620;
+        background-color: #1A1513;
         color: var(--text-main);
         border-color: var(--border-soft);
     }
-
-    .form-control:focus,
-    .form-select:focus,
-    .chika-input:focus {
-        background-color: #281D26;
-        color: var(--text-main);
-    }
 }
 
-/* === 16. PREFERS REDUCED MOTION (D6) === */
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
         animation-duration: 0.01ms;
