@@ -92,7 +92,7 @@ Seluruh warna dan variabel desain diatur terpusat di `:root` pada file `css/styl
 
 | Layar Desktop (1280px) | Mode Gelap (Dark Mode) |
 | :---: | :---: |
-| ![Desktop 1280px](img/screenshots/final-ligihtmode.png) | ![Dark Mode](img/screenshots/final-darkmode.png) |
+| ![Desktop 1280px](img/screenshots/final-lightmode.png) | ![Dark Mode](img/screenshots/final-darkmode.png) |
 
 ### B. Hasil Audit & Aksesibilitas
 - **W3C Markup Validator:** 0 Error di seluruh 7 halaman HTML.
